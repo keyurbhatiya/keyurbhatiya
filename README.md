@@ -19,7 +19,7 @@ Here are some ideas to get you started:
 
 ## Hi 👋, I'm Keyur Bhatiya
 
-💻 Aspiring Developer | Python, PHP, Laravel
+💻 Aspiring Developer | Python Developer
 
 🔭 Currently exploring AI, Automation, and Full Stack Projects
 
