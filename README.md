@@ -2,17 +2,19 @@
 
 **Python Developer | AI & Automation Enthusiast**
 
-Hello! I'm Keyur, a dedicated Python developer with a passion for building innovative solutions in **AI**, **automation**, and **web development**. I'm currently on a **180-day Python project challenge**, creating impactful projects and sharing my journey through code and tutorials.
+Hello! I'm Keyur, a Python developer passionate about building real-world solutions in **AI**, **automation**, and **web development**. I'm currently working through a **90-day AI/ML Developer Roadmap**, building projects and sharing my progress along the way.
 
 ---
 
 ## 🚀 About Me
 
-- 🔭 **Currently Working On**: [Jarvis AI Automation](https://github.com/keyurbhatiya/Jarvis_ai_2025.git) | [Sassy AI Chatbot UI](https://github.com/keyurbhatiya/Sassy-Chatbot.git)
+- 🔭 **Currently Working On**:  
+  [90-Day AI/ML Developer Roadmap](https://github.com/keyurbhatiya/90-Day-AI-ML-Developer-Roadmap)  
+  [n8n-on-render](https://github.com/keyurbhatiya/n8n-on-render)  
 - 🌱 **Learning**: Advanced Python, machine learning, and DevOps practices
-- 👯 **Open to Collaboration**: On Python-based projects involving Flask, Django, or AI
+- 👯 **Open to Collaboration**: Python projects (Flask, Django, AI, automation)
 - 📫 **Contact**: [keyurbhatiya.dev@email.com](mailto:keyurbhatiya.dev@email.com)
-- ⚡ **Fun Fact**: I crafted a car racing game in Python from scratch! 🚗
+- ⚡ **Fun Fact**: I built a Python car racing game from scratch! 🚗
 
 ---
 
@@ -26,18 +28,18 @@ Hello! I'm Keyur, a dedicated Python developer with a passion for building innov
 ![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
 ![Git](https://img.shields.io/badge/-Git-F05032?style=flat&logo=git&logoColor=white)
 ![VS Code](https://img.shields.io/badge/-VSCode-007ACC?style=flat&logo=visual-studio-code&logoColor=white)
-![Cursor IDE](https://img.shields.io/badge/-Cursor-5A45FF?style=flat&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMu%0D%0Ab3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHJ4PSIzIiBmaWxsPSIjNUE0%0D%0ANUZGIi8+PHBhdGggZD0iT)
+![Jupyter](https://img.shields.io/badge/-Jupyter-F37626?style=flat&logo=jupyter&logoColor=white)
 
 ---
 
 ## 📚 Featured Projects
 
-- **[Jarvis AI Automation](https://github.com/keyurbhatiya/Jarvis_ai_2025.git)**: A Python-based AI voice assistant leveraging Edge-TTS and Pygame for interactive experiences.
-- **[Sassy AI Chatbot UI](https://github.com/keyurbhatiya/Sassy-Chatbot.git)**: A sleek, user-friendly chatbot interface built with Flask and modern front-end technologies.
-- **[AI Resume Critiquer](https://github.com/keyurbhatiya/AI-Resume-Critiquer.git)**: An AI-driven tool to analyze and enhance resumes using Python and NLP.
-- **[Flask Todo App](https://github.com/keyurbhatiya/flask-todo-app)**: An open-source task management application built with Flask and MySQL.
-- **[Weather App](https://github.com/keyurbhatiya/weather_app.git)**: A Python-powered weather forecasting app integrating external APIs.
-- **[Py Music Box](https://github.com/keyurbhatiya/py-music-box-.git)**: A music player application developed with Python and Pygame.
+- **[90-Day AI/ML Developer Roadmap](https://github.com/keyurbhatiya/90-Day-AI-ML-Developer-Roadmap)** – Step-by-step guide and hands-on projects for aspiring AI/ML developers.
+- **[n8n-on-render](https://github.com/keyurbhatiya/n8n-on-render)** – Deploy n8n automation workflows easily on Render.
+- **[Python_practical](https://github.com/keyurbhatiya/Python_practical)** – Real-world Python practice programs and examples.
+- **[AI-Resume-Critiquer](https://github.com/keyurbhatiya/AI-Resume-Critiquer.git)** – Analyze and enhance resumes using Python & NLP.
+- **[flask-todo-app](https://github.com/keyurbhatiya/flask-todo-app)** – A simple, open-source task manager built with Flask and MySQL.
+- **[py-music-box-](https://github.com/keyurbhatiya/py-music-box-.git)** – Music player app built with Python and Pygame.
 
 ---
 
@@ -50,4 +52,5 @@ Hello! I'm Keyur, a dedicated Python developer with a passion for building innov
 ---
 
 ## 📊 GitHub Stats
+
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=keyurbhatiya&layout=compact&theme=radical)
