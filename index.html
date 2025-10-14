@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en" class="false" data-astro-cid-sckkx6r4>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="canonical" href="https://keyurbhatiya.com/">
+  <meta name="generator" content="Static Portfolio">
+  <title>keyurbhatiya.com</title>
+  <meta name="title" content="keyurbhatiya.com">
+  <meta name="description" content="Python development, AI insights, and personal experiences by Keyur Bhatiya.">
+  <meta name="author" content="Keyur Bhatiya">
+  <meta property="og:title" content="keyurbhatiya.com">
+  <meta property="og:description" content="Python development, AI insights, and personal experiences by Keyur Bhatiya.">
+  <meta property="og:url" content="https://keyurbhatiya.com/">
+  <meta property="og:image" content="https://keyurbhatiya.com/KeyurBhatiya-Cover.jpg">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://keyurbhatiya.com/">
+  <meta property="twitter:title" content="keyurbhatiya.com">
+  <meta property="twitter:description" content="Python development, AI insights, and personal experiences by Keyur Bhatiya.">
+  <meta property="twitter:image" content="https://keyurbhatiya.com/KeyurBhatiya-Cover.jpg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "keyurbhatiya.com",
+    "image": "https://keyurbhatiya.com/KeyurBhatiya-Cover.jpg",
+    "author": [{"@type": "Person", "name": "Keyur Bhatiya", "url": "https://keyurbhatiya.com/about"}]
+  }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            accent: '#2563eb',
+            border: '#e5e7eb',
+            background: '#ffffff',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Additional styles from demo */
+    .twitter-container { width: 100%; max-width: 500px; height: auto; overflow: hidden; }
+    /* Preloader, fade-in, etc. from previous */
+    #preloader {
+      position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: #fff; z-index: 9999;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .loader { border: 4px solid #f3f3f3; border-top: 4px solid #2563eb; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; }
+    @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+    .skill-bar { height: 8px; background: #2563eb; border-radius: 4px; transition: width 1s ease-in-out; }
+    #backToTop { position: fixed; bottom: 20px; right: 20px; background: #2563eb; color: #fff; width: 40px; height: 40px; border-radius: 50%; display: none; align-items: center; justify-content: center; cursor: pointer; z-index: 1000; }
+  </style>
+</head>
+<body class="bg-background text-gray-800 dark:bg-gray-900 dark:text-gray-200 font-sans flex flex-col min-h-screen">
+  <div id="preloader"><div class="loader"></div></div>
+
+  <title>Keyur Bhatiya - Python Developer & AI Insights</title>
+  <meta name="description" content="A Python developer, AI enthusiast, and tech lover. Sharing insights, tutorials on Python, AI, data visualization, and more.">
+  <meta property="og:title" content="Keyur Bhatiya - Python Developer & AI Insights">
+  <meta property="og:description" content="Sharing insights, tutorials on Python, AI, data visualization, and more.">
+  <meta property="og:image" content="/path/to/preview-image.jpg">
+  <meta property="og:url" content="https://keyurbhatiya.com">
+  <meta name="twitter:card" content="summary_large_image">
+<!-- Header -->
+<header>
+  <div id="nav-container" class="mx-auto flex max-w-4xl flex-col items-center justify-between sm:flex-row px-4 sm:px-6">
+    <div id="top-nav-wrap" class="relative flex w-full items-baseline justify-between py-4">
+      <a href="/" class="text-2xl font-semibold whitespace-nowrap hover:text-accent transition sm:static sm:mt-0">keyurbhatiya.com</a>
+      <nav id="nav-menu" class="flex w-full flex-col items-center sm:ml-4 sm:flex-row sm:justify-end sm:space-x-4">
+        <button id="menu-btn" class="focus:outline-none self-end p-2 sm:hidden" aria-label="Open Menu" aria-expanded="false" aria-controls="menu-items">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden" id="close-icon">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M18 6l-12 12"/>
+            <path d="M6 6l12 12"/>
+          </svg>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="block" id="menu-icon">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M4 6h16"/>
+            <path d="M7 12h13"/>
+            <path d="M10 18h10"/>
+          </svg>
+        </button>
+        <ul id="menu-items" class="hidden absolute top-12 right-0 z-50 mt-4 w-44 flex-col items-center gap-2 rounded-md border border-gray-200 bg-white p-4 text-center shadow-lg dark:border-gray-700 dark:bg-gray-800 sm:flex sm:static sm:w-auto sm:flex-row sm:bg-transparent sm:p-0 sm:shadow-none sm:dark:bg-transparent">
+          <li class="w-full sm:w-auto"><a href="#home" class="block w-full rounded-md px-4 py-2 font-medium transition hover:text-accent">Home</a></li>
+          <li class="w-full sm:w-auto"><a href="#about" class="block w-full rounded-md px-4 py-2 font-medium transition hover:text-accent">About</a></li>
+          <li class="w-full sm:w-auto"><a href="#projects" class="block w-full rounded-md px-4 py-2 font-medium transition hover:text-accent">Projects</a></li>
+          <li class="w-full sm:w-auto"><a href="#blog" class="block w-full rounded-md px-4 py-2 font-medium transition hover:text-accent">Blog</a></li>
+          <li class="w-full sm:w-auto"><a href="#lets-connect" class="block w-full rounded-md px-4 py-2 font-medium transition hover:text-accent">Contact</a></li>
+          <li class="w-full sm:w-auto flex items-center justify-center">
+            <a href="#search" class="group inline-block p-2 transition hover:text-accent" aria-label="Search" title="Search">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"/>
+                <path d="M21 21l-6 -6"/>
+              </svg>
+            </a>
+          </li>
+          <li class="w-full sm:w-auto flex items-center justify-center">
+            <button id="theme-btn" class="focus:outline-none relative flex size-10 items-center justify-center transition hover:[&>svg]:stroke-accent" title="Toggle light/dark mode" aria-label="Toggle theme" aria-live="polite">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" id="light-icon">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"/>
+              </svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" id="dark-icon">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z"/>
+                <path d="M6.343 17.657l-1.414 1.414"/>
+                <path d="M6.343 6.343l-1.414 -1.414"/>
+                <path d="M17.657 6.343l1.414 -1.414"/>
+                <path d="M17.657 17.657l1.414 1.414"/>
+                <path d="M4 12h-2"/>
+                <path d="M12 4v-2"/>
+                <path d="M20 12h2"/>
+                <path d="M12 20v2"/>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="mx-auto max-w-3xl px-4">
+    <hr class="border-gray-200 dark:border-gray-700" aria-hidden="true">
+  </div>
+</header>
+
+<script type="module">
+  function initMenu() {
+    const menuBtn = document.querySelector("#menu-btn");
+    const menuItems = document.querySelector("#menu-items");
+    const menuIcon = document.querySelector("#menu-icon");
+    const closeIcon = document.querySelector("#close-icon");
+
+    if (!menuBtn || !menuItems || !menuIcon || !closeIcon) return;
+
+    // Toggle menu visibility
+    const toggleMenu = () => {
+      const expanded = menuBtn.getAttribute("aria-expanded") === "true";
+      menuBtn.setAttribute("aria-expanded", !expanded);
+      menuBtn.setAttribute("aria-label", expanded ? "Open Menu" : "Close Menu");
+      menuItems.classList.toggle("hidden");
+      menuIcon.classList.toggle("hidden");
+      closeIcon.classList.toggle("hidden");
+    };
+
+    // Close menu when clicking outside
+    const handleOutsideClick = (event) => {
+      if (!menuItems.contains(event.target) && !menuBtn.contains(event.target)) {
+        menuBtn.setAttribute("aria-expanded", "false");
+        menuBtn.setAttribute("aria-label", "Open Menu");
+        menuItems.classList.add("hidden");
+        menuIcon.classList.remove("hidden");
+        closeIcon.classList.add("hidden");
+      }
+    };
+
+    // Close menu on Escape key press
+    const handleEscapeKey = (event) => {
+      if (event.key === "Escape" && menuBtn.getAttribute("aria-expanded") === "true") {
+        toggleMenu();
+      }
+    };
+
+    // Add event listeners
+    menuBtn.addEventListener("click", toggleMenu);
+    document.addEventListener("click", handleOutsideClick);
+    document.addEventListener("keydown", handleEscapeKey);
+
+    // Cleanup event listeners to prevent memory leaks
+    return () => {
+      menuBtn.removeEventListener("click", toggleMenu);
+      document.removeEventListener("click", handleOutsideClick);
+      document.removeEventListener("keydown", handleEscapeKey);
+    };
+  }
+
+  // Initialize menu
+  initMenu();
+
+  // Reinitialize menu after Astro page swap
+  document.addEventListener("astro:after-swap", initMenu);
+</script>
+
+  <main id="main-content" class="max-w-7xl mx-auto px-6 fade-in flex-grow">
+    <!-- Hero -->
+    <section id="home" class="pt-6 pb-12 text-center">
+      <h1 class="text-5xl font-bold sm:text-6xl fade-in">Hey, I'm Keyur Bhatiya</h1>
+      <p class="mt-4 text-xl text-gray-700 dark:text-gray-300 fade-in">
+        A Python developer, AI enthusiast, and tech lover. 
+        Sharing insights, tutorials on Python, AI, data visualization, and more.
+      </p>
+      <p class="mt-3 text-md text-gray-500 fade-in">
+        Read my latest posts or check out my
+        <a href="#about" class="group inline-block hover:text-accent underline decoration-dashed underline-offset-4 hover:text-accent transition">About Me</a>
+        page.
+      </p>
+      <div class="mt-6 flex flex-wrap justify-center items-center gap-4 fade-in">
+        <div class="text-lg font-semibold">Connect with me:</div>
+        <div class="flex flex-wrap justify-center gap-1">
+          <!-- GitHub -->
+          <a href="https://github.com/keyurbhatiya"  target="_blank" class="group inline-block p-2 hover:scale-110 transition-transform duration-300 sm:p-1" title="GitHub">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block scale-125 stroke-current opacity-90 group-hover:stroke-accent sm:scale-110">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"/>
+            </svg>
+            <span class="sr-only">GitHub</span>
+          </a>
+          <!-- LinkedIn -->
+          <a href="https://linkedin.com/in/keyurbhatiya" target="_blank" class="group inline-block p-2 hover:scale-110 transition-transform duration-300 sm:p-1" title="LinkedIn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block scale-125 stroke-current opacity-90 group-hover:stroke-accent sm:scale-110">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M8 11v5"/>
+              <path d="M8 8v.01"/>
+              <path d="M12 16v-5"/>
+              <path d="M16 16v-3a2 2 0 1 0 -4 0"/>
+              <path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z"/>
+            </svg>
+            <span class="sr-only">LinkedIn</span>
+          </a>
+         <!-- X Logo -->
+          <a href="https://x.com/keyur_bhatiya" target="_blank" class="group inline-block p-2 hover:rotate-6 transition-transform sm:p-1" title="keyur_bhatiya on X">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block scale-125 stroke-current opacity-90 group-hover:stroke-accent sm:scale-110">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
+              <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
+            </svg>
+            <span class="sr-only">keyrur_bhatiya on X</span>
+          </a>
+          <!-- Instagram -->
+          <a href="https://instagram.com/keyur_bhatiya" target="_blank" class="group inline-block p-2 hover:scale-110 transition-transform duration-300 sm:p-1" title="Instagram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block scale-125 stroke-current opacity-90 group-hover:stroke-accent sm:scale-110">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <rect x="4" y="4" width="16" height="16" rx="4"/>
+              <circle cx="12" cy="12" r="3"/>
+              <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"/>
+            </svg>
+            <span class="sr-only">Instagram</span>
+          </a>
+          <!-- Email -->
+          <a href="mailto:keyurbhatiya.dev@gmail.com" class="group inline-block p-2 hover:scale-110 transition-transform duration-300 sm:p-1" title="Email">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block scale-125 stroke-current opacity-90 group-hover:stroke-accent sm:scale-110">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-14a2 2 0 0 1-2-2v-10z"/>
+              <path d="M3 7l9 6l9-6"/>
+            </svg>
+            <span class="sr-only">Email</span>
+          </a>
+        </div>
+      </div>
+
+    </section>
+    <div class="max-w-3xl mx-auto px-4 mb-0">
+      <hr class="border-border" aria-hidden="true">
+    </div>
+
+    <!-- About Me -->
+    <section id="about" class="py-20 fade-in">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-8 fade-in">About Me</h2>
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-6 md:mb-0 fade-in">
+            <p class="text-gray-600 dark:text-gray-400 mb-4">
+              Hi! I'm <strong>Keyur Bhatiya</strong>, a <strong>Python Developer</strong> with a passion for building intelligent, scalable, and efficient web applications. 
+              I specialize in <strong>AI integration, backend development, and data visualization</strong> — turning complex ideas into clean, high-performing digital solutions.
+            </p>
+            <p class="text-gray-600 dark:text-gray-400 mb-4">
+              I’ve developed projects ranging from <strong>AI-powered assistants</strong> and <strong>Flask/Django web apps</strong> to 
+              <strong>Streamlit dashboards</strong> and <strong>data-driven platforms</strong>. My focus is always on writing optimized, maintainable, 
+              and secure code that scales with modern business needs.
+            </p>
+            <p class="text-gray-600 dark:text-gray-400 mb-4">
+              I’m constantly learning and experimenting with the latest tools in the Python ecosystem — 
+              whether that’s deploying APIs with <strong>FastAPI</strong>, integrating frontends using <strong>Tailwind</strong> & <strong>Bootstrap</strong>, 
+              or managing databases like <strong>PostgreSQL</strong> and <strong>MySQL</strong>.
+            </p>
+            <a href="https://drive.google.com/file/d/1qRPjnazNKwHg-yiaowpJflgKEaIWEuo2/view?usp=sharing" target="_blank" download class="inline-block bg-accent text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition hover:scale-105">Resume</a>
+          </div>
+
+          <div class="md:w-1/2 md:pl-10">
+            <h3 class="text-xl font-semibold mb-4 fade-in">Skills</h3>
+            <ul class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-center">
+              <li class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg shadow fade-in">
+                <i class="fab fa-python text-4xl text-accent"></i>
+                <p class="mt-2 text-sm font-medium">Python</p>
+              </li>
+              <li class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg shadow fade-in">
+                <i class="fas fa-server text-4xl text-accent"></i>
+                <p class="mt-2 text-sm font-medium">Django</p>
+              </li>
+              <li class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg shadow fade-in">
+                <i class="fas fa-flask text-4xl text-accent"></i>
+                <p class="mt-2 text-sm font-medium">Flask</p>
+              </li>
+              <li class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg shadow fade-in">
+                <i class="fas fa-bolt text-4xl text-accent"></i>
+                <p class="mt-2 text-sm font-medium">FastAPI</p>
+              </li>
+              <li class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg shadow fade-in">
+                <i class="fab fa-css3-alt text-4xl text-accent"></i>
+                <p class="mt-2 text-sm font-medium">Tailwind CSS</p>
+              </li>
+              <li class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg shadow fade-in">
+                <i class="fab fa-bootstrap text-4xl text-accent"></i>
+                <p class="mt-2 text-sm font-medium">Bootstrap</p>
+              </li>
+              <li class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg shadow fade-in">
+                <i class="fas fa-exchange-alt text-4xl text-accent"></i>
+                <p class="mt-2 text-sm font-medium">AJAX</p>
+              </li>
+              <li class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg shadow fade-in">
+                <i class="fas fa-database text-4xl text-accent"></i>
+                <p class="mt-2 text-sm font-medium">PostgreSQL</p>
+              </li>
+              <li class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg shadow fade-in">
+                <i class="fas fa-database text-4xl text-accent"></i>
+                <p class="mt-2 text-sm font-medium">MySQL</p>
+              </li>
+              <li class="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg shadow fade-in">
+                <i class="fas fa-chart-line text-4xl text-accent"></i>
+                <p class="mt-2 text-sm font-medium">Streamlit</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="max-w-3xl mx-auto px-4 mb-0">
+      <hr class="border-border" aria-hidden="true">
+    </div>
+
+    <!-- Projects -->
+    <section id="projects" class="pt-12 pb-6 fade-in">
+      <h2 class="text-3xl font-semibold tracking-wide text-center">Projects</h2>
+      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
+
+        <li class="my-6">
+          <a href="https://academichub-frio.onrender.com" target="_blank" class="inline-block text-lg font-medium text-gray-800 dark:text-gray-200 decoration-dashed underline-offset-4 hover:text-accent hover:underline transition">
+            <h3 class="text-lg font-medium">AcademicHub</h3>
+          </a>
+          <div class="flex items-end space-x-2 opacity-80">
+            <svg xmlns="http://www.w3.org/2000/svg" class="scale-90 inline-block h-6 w-6 fill-foreground"><path d="M7 11h2v2H7zm0 4h2v2H7zm4-4h2v2h-2zm0 4h2v2h-2zm4-4h2v2h-2zm0 4h2v2h-2z"/><path d="M5 22h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2zM19 8v12H5V8h14z"/></svg>
+            <span class="italic text-sm"><time datetime="2025-10-10">Oct 10, 2025</time> | 11:00 AM</span>
+          </div>
+          <p>Full-stack academic resource management app with an admin dashboard, interactive analytics,content moderation, and responsive UI.</p>
+          <p class="text-sm text-gray-500 mb-4">Tech: Django, Tailwind, PostgreSQL, Cloudinary</p>
+          <div class="flex space-x-4">
+            <a href="https://github.com/keyurbhatiya/academichub" class="text-accent hover:underline transition">GitHub</a>
+            <a href="https://academichub-frio.onrender.com" class="text-accent hover:underline transition">Live Demo</a>
+          </div>
+        </li>
+
+        <li class="my-6">
+          <a href="https://quickshare-frio.onrender.com" class="inline-block text-lg font-medium text-gray-800 dark:text-gray-200 decoration-dashed underline-offset-4 hover:text-accent hover:underline transition">
+            <h3 class="text-lg font-medium">QuickShare</h3>
+          </a>
+          <div class="flex items-end space-x-2 opacity-80">
+            <svg xmlns="http://www.w3.org/2000/svg" class="scale-90 inline-block h-6 w-6 fill-foreground"><path d="M7 11h2v2H7zM11 11h2v2h-2zM15 11h2v2h-2z"/><path d="M5 22h14a2 2 0 0 0 2-2V8H3v12a2 2 0 0 0 2 2zM19 8V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v2z"/></svg>
+            <span class="italic text-sm"><time datetime="2025-09-25">Sep 25, 2025</time> | 10:30 AM</span>
+          </div>
+          <p>QuickShare is a secure, ephemeral file and link sharing service designed for maximum efficiency and privacy. It generates short, unique codes for content that automatically expires and is permanently deleted from the server after 5 minutes.</p>
+          <p class="text-sm text-gray-500 mb-4">Tech: Flask, Fast-API, Tailwind</p>
+          <div class="flex space-x-4">
+            <a href="https://github.com/keyurbhatiya/QuickShare.git" class="text-accent hover:underline transition">GitHub</a>
+            <a href="https://quickshare-it.onrender.com" class="text-accent hover:underline transition">Live Demo</a>
+          </div>
+        </li>
+
+        <li class="my-6">
+          <a href="https://github.com/keyurbhatiya/Jarvis_ai_2025.git" class="inline-block text-lg font-medium text-gray-800 dark:text-gray-200 decoration-dashed underline-offset-4 hover:text-accent hover:underline transition">
+            <h3 class="text-lg font-medium">Jarvis AI Assistant</h3>
+          </a>
+          <div class="flex items-end space-x-2 opacity-80">
+            <svg xmlns="http://www.w3.org/2000/svg" class="scale-90 inline-block h-6 w-6 fill-foreground"><path d="M12 22C6.486 22 2 17.514 2 12S6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/><path d="M12 6a6 6 0 1 0 0 12 6 6 0 0 0 0-12z"/></svg>
+            <span class="italic text-sm"><time datetime="2025-09-15">Jun 6, 2025</time> | 02:00 PM</span>
+          </div>
+          <p>An AI-powered desktop assistant with biometric login, voice commands, and offline + online AI modes.</p>
+          <p class="text-sm text-gray-500 mb-4">Tech: Python, Flask, Groq API, Edge-TTS, Pygame</p>
+          <div class="flex space-x-4">
+            <a href="https://github.com/keyurbhatiya/Jarvis_ai_2025.git" class="text-accent hover:underline transition">GitHub</a>
+            <a href="https://github.com/keyurbhatiya/Jarvis_ai_2025.git" class="text-accent hover:underline transition">Demo Video</a>
+          </div>
+        </li>
+
+        <li class="my-6">
+          <a href="https://github.com/keyurbhatiya/AI-Resume-Critiquer.git" class="inline-block text-lg font-medium text-gray-800 dark:text-gray-200 decoration-dashed underline-offset-4 hover:text-accent hover:underline transition">
+            <h3 class="text-lg font-medium">AI Resume Critiquer</h3>
+          </a>
+          <div class="flex items-end space-x-2 opacity-80">
+            <svg xmlns="http://www.w3.org/2000/svg" class="scale-90 inline-block h-6 w-6 fill-foreground"><path d="M4 4h16v16H4z"/><path d="M8 8h8v2H8zm0 4h6v2H8z"/></svg>
+            <span class="italic text-sm"><time datetime="2025-08-20">May 17, 2025</time> | 01:00 PM</span>
+          </div>
+          <p>A smart resume analyzer that provides feedback and improvement tips using AI and NLP models.</p>
+          <p class="text-sm text-gray-500 mb-4">Tech: Streamlit, OpenAI API, Python</p>
+          <div class="flex space-x-4">
+            <a href="https://github.com/keyurbhatiya/AI-Resume-Critiquer.git" target="_blank" class="text-accent hover:underline transition">GitHub</a>
+            <a href="https://github.com/keyurbhatiya/AI-Resume-Critiquer.git" target="_blank" class="text-accent hover:underline transition">Live Demo</a>
+          </div>
+        </li>
+
+        <li class="my-6">
+          <a href="https://github.com/keyurbhatiya/Sassy-Chatbot.git" class="inline-block text-lg font-medium text-gray-800 dark:text-gray-200 decoration-dashed underline-offset-4 hover:text-accent hover:underline transition">
+            <h3 class="text-lg font-medium">Sassy Chatbot Web App</h3>
+          </a>
+          <div class="flex items-end space-x-2 opacity-80">
+            <svg xmlns="http://www.w3.org/2000/svg" class="scale-90 inline-block h-6 w-6 fill-foreground"><path d="M12 22c5.523 0 10-3.582 10-8s-4.477-8-10-8S2 8.582 2 14c0 2.28 1.006 4.36 2.683 5.93L4 22l4.057-2.031A9.982 9.982 0 0 0 12 22z"/></svg>
+            <span class="italic text-sm"><time datetime="2025-07-31">Aug 22, 2025</time> | 06:00 PM</span>
+          </div>
+          <p>An interactive chatbot web app with personality settings, built with Streamlit and AI models for real-time chat.</p>
+          <p class="text-sm text-gray-500 mb-4">Tech: Streamlit, Python, Groq API</p>
+          <div class="flex space-x-4">
+            <a href="https://github.com/keyurbhatiya/Sassy-Chatbot.git" target="_blank" class="text-accent hover:underline transition">GitHub</a>
+            <a href="https://github.com/keyurbhatiya/Sassy-Chatbot.git" target="_blank" class="text-accent hover:underline transition">Live Demo</a>
+          </div>
+        </li>
+
+        <li class="my-6">
+          <a href="https://github.com/keyurbhatiya/RepoDoc.git" class="inline-block text-lg font-medium text-gray-800 dark:text-gray-200 decoration-dashed underline-offset-4 hover:text-accent hover:underline transition">
+            <h3 class="text-lg font-medium">Repo Doc</h3>
+          </a>
+          <div class="flex items-end space-x-2 opacity-80">
+            <svg xmlns="http://www.w3.org/2000/svg" class="scale-90 inline-block h-6 w-6 fill-foreground"><path d="M3 3v18h18"/><path d="M7 13h2v5H7zM11 9h2v9h-2zM15 5h2v13h-2z"/></svg>
+            <span class="italic text-sm"><time datetime="2025-07-10">Aug 30, 2025</time> | 05:00 PM</span>
+          </div>
+          <p>A Flask-based tool to generate professional README files for public GitHub repositories by analyzing their structure, dependencies, and metadata.</p>
+          <p class="text-sm text-gray-500 mb-4">Tech: Python, Flask, Groq API</p>
+          <div class="flex space-x-4">
+            <a href="https://github.com/keyurbhatiya/RepoDoc.git" target="_blank" class="text-accent hover:underline transition">GitHub</a>
+            <a href="https://github.com/keyurbhatiya/RepoDoc.git" target="_blank" class="text-accent hover:underline transition">Live Demo</a>
+          </div>
+        </li>
+
+      </ul>
+
+      <div class="my-12 text-center">
+        <a href="#projects" class="group inline-block text-lg font-semibold hover:text-accent transition">
+          View All Projects
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block ml-2">
+            <path d="M5 12h14M13 18l6-6-6-6"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <div class="max-w-3xl mx-auto px-4 mb-0">
+      <hr class="border-border" aria-hidden="true">
+    </div>
+    
+    <!-- Blog Articles -->
+
+    <section id="blog" class="pt-12 pb-6 fade-in">
+      <h2 class="text-3xl font-semibold tracking-wide text-center">Latest Tech Articles</h2>
+      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
+        
+        <li class="my-6">
+          <a href="#" class="inline-block text-lg font-medium text-gray-800 dark:text-gray-200 decoration-dashed underline-offset-4 hover:text-accent hover:underline transition">
+            <h3 class="text-lg font-medium decoration-dashed hover:underline">Mastering Flask: Build Scalable Web Apps in Python</h3>
+          </a>
+          <div class="flex items-end space-x-2 opacity-80">
+            <svg xmlns="http://www.w3.org/2000/svg" class="scale-90 inline-block h-6 w-6 min-w-[1.375rem] fill-foreground" aria-hidden="true"><path d="M7 11h2v2H7zm0 4h2v2H7zm4-4h2v2h-2zm0 4h2v2h-2zm4-4h2v2h-2zm0 4h2v2h-2z"></path><path d="M5 22h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2zM19 8l.001 12H5V8h14z"></path></svg>
+            <span class="italic text-sm"><time datetime="2025-10-14">Oct 14, 2025</time> | 09:00 AM</span>
+          </div>
+          <p>Learn how to create production-ready web applications using Flask and Python. Discover API integration, template rendering, and deployment tips for modern web apps.</p>
+        </li>
+
+        <li class="my-6">
+          <a href="#" class="inline-block text-lg font-medium text-gray-800 dark:text-gray-200 hover:text-accent transition">
+            <h3 class="text-lg font-medium decoration-dashed hover:underline">Django REST Framework: Build Powerful APIs</h3>
+          </a>
+          <div class="flex items-end space-x-2 opacity-80">
+            <svg xmlns="http://www.w3.org/2000/svg" class="scale-90 inline-block h-6 w-6 fill-foreground"><path d="M7 11h2v2H7zM7 15h2v2H7zM11 11h2v2h-2zM11 15h2v2h-2zM15 11h2v2h-2zM15 15h2v2h-2z"></path><path d="M5 22h14a2 2 0 002-2V6a2 2 0 00-2-2h-2V2h-2v2H9V2H7v2H5a2 2 0 00-2 2v14a2 2 0 002 2zm14-14v12H5V8h14z"></path></svg>
+            <span class="italic text-sm"><time datetime="2025-10-07">Oct 7, 2025</time> | 11:30 AM</span>
+          </div>
+          <p>Explore Django REST Framework and learn how to design secure, scalable, and high-performing RESTful APIs using Python and PostgreSQL.</p>
+        </li>
+
+        <li class="my-6">
+          <a href="#" class="inline-block text-lg font-medium text-gray-800 dark:text-gray-200 hover:text-accent transition">
+            <h3 class="text-lg font-medium decoration-dashed hover:underline">FastAPI vs Flask: Which Python Framework Wins?</h3>
+          </a>
+          <div class="flex items-end space-x-2 opacity-80">
+            <svg xmlns="http://www.w3.org/2000/svg" class="scale-90 inline-block h-6 w-6 fill-foreground"><path d="M7 11h2v2H7zM7 15h2v2H7zM11 11h2v2h-2zM11 15h2v2h-2zM15 11h2v2h-2zM15 15h2v2h-2z"></path><path d="M5 22h14a2 2 0 002-2V6a2 2 0 00-2-2h-2V2h-2v2H9V2H7v2H5a2 2 0 00-2 2v14a2 2 0 002 2zm14-14v12H5V8h14z"></path></svg>
+            <span class="italic text-sm"><time datetime="2025-10-02">Oct 2, 2025</time> | 03:00 PM</span>
+          </div>
+          <p>Compare FastAPI and Flask — two of the most popular Python web frameworks — in terms of speed, scalability, and developer experience.</p>
+        </li>
+
+        <li class="my-6">
+          <a href="#" class="inline-block text-lg font-medium text-gray-800 dark:text-gray-200 hover:text-accent transition">
+            <h3 class="text-lg font-medium decoration-dashed hover:underline">Streamlit for Data Science: Build Interactive Dashboards</h3>
+          </a>
+          <div class="flex items-end space-x-2 opacity-80">
+            <svg xmlns="http://www.w3.org/2000/svg" class="scale-90 inline-block h-6 w-6 fill-foreground"><path d="M7 11h2v2H7zM7 15h2v2H7zM11 11h2v2h-2zM11 15h2v2h-2zM15 11h2v2h-2zM15 15h2v2h-2z"></path><path d="M5 22h14a2 2 0 002-2V6a2 2 0 00-2-2h-2V2h-2v2H9V2H7v2H5a2 2 0 00-2 2v14a2 2 0 002 2zm14-14v12H5V8h14z"></path></svg>
+            <span class="italic text-sm"><time datetime="2025-09-25">Sep 25, 2025</time> | 01:00 PM</span>
+          </div>
+          <p>Discover how to use Streamlit to create real-time, interactive dashboards for data visualization and AI projects with minimal Python code.</p>
+        </li>
+
+        <li class="my-6">
+          <a href="#" class="inline-block text-lg font-medium text-gray-800 dark:text-gray-200 hover:text-accent transition">
+            <h3 class="text-lg font-medium decoration-dashed hover:underline">Optimizing Python Projects with Tailwind & Bootstrap</h3>
+          </a>
+          <div class="flex items-end space-x-2 opacity-80">
+            <svg xmlns="http://www.w3.org/2000/svg" class="scale-90 inline-block h-6 w-6 fill-foreground"><path d="M7 11h2v2H7zM7 15h2v2H7zM11 11h2v2h-2zM11 15h2v2h-2zM15 11h2v2h-2zM15 15h2v2h-2z"></path><path d="M5 22h14a2 2 0 002-2V6a2 2 0 00-2-2h-2V2h-2v2H9V2H7v2H5a2 2 0 00-2 2v14a2 2 0 002 2zm14-14v12H5V8h14z"></path></svg>
+            <span class="italic text-sm"><time datetime="2025-09-15">Sep 15, 2025</time> | 04:00 PM</span>
+          </div>
+          <p>Enhance your Flask or Django web apps with Tailwind CSS and Bootstrap to create modern, responsive, and visually appealing UIs.</p>
+        </li>
+
+        <li class="my-6">
+          <a href="#" class="inline-block text-lg font-medium text-gray-800 dark:text-gray-200 hover:text-accent transition">
+            <h3 class="text-lg font-medium decoration-dashed hover:underline">AI-Powered Resume Critiquer using Python & NLP</h3>
+          </a>
+          <div class="flex items-end space-x-2 opacity-80">
+            <svg xmlns="http://www.w3.org/2000/svg" class="scale-90 inline-block h-6 w-6 fill-foreground"><path d="M7 11h2v2H7zM7 15h2v2H7zM11 11h2v2h-2zM11 15h2v2h-2zM15 11h2v2h-2zM15 15h2v2h-2z"></path><path d="M5 22h14a2 2 0 002-2V6a2 2 0 00-2-2h-2V2h-2v2H9V2H7v2H5a2 2 0 00-2 2v14a2 2 0 002 2zm14-14v12H5V8h14z"></path></svg>
+            <span class="italic text-sm"><time datetime="2025-09-10">Sep 10, 2025</time> | 10:00 AM</span>
+          </div>
+          <p>See how AI and NLP can evaluate resumes, provide feedback, and help job seekers stand out — built using Python, Flask, and OpenAI APIs.</p>
+        </li>
+      </ul>
+
+      <div class="my-12 text-center">
+        <a href="#blog" class="group inline-block hover:text-accent text-lg font-semibold hover:text-accent transition">
+          View All Posts
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block ml-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12h14"/><path d="M13 18l6-6"/><path d="M13 6l6 6"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <div class="max-w-3xl mx-auto px-4 mb-0">
+      <hr class="border-border" aria-hidden="true">
+    </div>
+
+    <!-- lets-connect -->
+
+    <section id="lets-connect" class="py-16 px-6 text-center fade-in">
+      <h2 class="text-3xl font-bold mb-4">Let’s Connect</h2>
+      <p class="text-gray-700 dark:text-gray-300 max-w-2xl mx-auto mb-8">
+        If you’re passionate about AI, web development, or innovative digital experiences,
+        I’d love to connect. Let’s collaborate, exchange ideas, and build something meaningful together.
+      </p>
+
+      <ul class="text-left max-w-md mx-auto space-y-3 text-gray-700 dark:text-gray-300">
+        <li class="flex items-center gap-2">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 7v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7l-9 6-9-6z"/>
+          </svg>
+          <strong>Email</strong>:
+          <a href="mailto:keyurbhatiya.dev@gmail.com" class="text-accent decoration-dashed underline-offset-4 hover:text-accent hover:underline transition">
+            keyurbhatiya.dev@gmail.com
+          </a>
+        </li>
+
+        <li class="flex items-center gap-2">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2c2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2a4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0c-2.4-1.6-3.5-1.3-3.5-1.3a4.2 4.2 0 0 0-.1 3.2a4.6 4.6 0 0 0-1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6.6-.6 1.2-.5 2v3.5"/>
+          </svg>
+          <strong>GitHub</strong>:
+          <a href="https://github.com/keyurbhatiya"  target="_blank" class="text-accent decoration-dashed underline-offset-4 hover:text-accent hover:underline transition">
+            github.com/keyurbhatiya
+          </a>
+        </li>
+
+        <li class="flex items-center gap-2">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 11v5"/>
+            <path d="M8 8v.01"/>
+            <path d="M12 16v-5"/>
+            <path d="M16 16v-3a2 2 0 1 0-4 0"/>
+            <path d="M3 7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4h-10a4 4 0 0 1-4-4z"/>
+          </svg>
+          <strong>LinkedIn</strong>:
+          <a href="https://linkedin.com/in/keyurbhatiya"  target="_blank" class="text-accent decoration-dashed underline-offset-4 hover:text-accent hover:underline transition">
+            linkedin.com/in/keyurbhatiya
+          </a>
+        </li>
+
+        <li class="flex items-center gap-2">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="4" width="16" height="16" rx="4"/>
+            <circle cx="12" cy="12" r="3"/>
+            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"/>
+          </svg>
+          <strong>Instagram</strong>:
+          <a href="https://instagram.com/keyur_bhatiya" target="_blank" class="text-accent decoration-dashed underline-offset-4 hover:text-accent hover:underline transition">
+            @keyur_bhatiya
+          </a>
+        </li>
+
+        <li class="flex items-center gap-2">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4l11.733 16h4.267l-11.733-16z"/>
+            <path d="M4 20l6.768-6.768m2.46-2.46l6.772-6.772"/>
+          </svg>
+          <strong>X</strong>:
+          <a href="https://x.com/keyur_bhatiya" target="_blank" class="text-accent decoration-dashed underline-offset-4 hover:text-accent hover:underline transition">
+            @keyur_bhatiya
+          </a>
+        </li>
+      </ul>
+
+      <p class="mt-8 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+        I believe that technology isn’t just about coding—it’s about creating intelligent, impactful, and
+        secure solutions that improve the way we live and connect. The more we explore and innovate, the
+        closer we get to building a truly smart future.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- footer -->
+    <footer class="w-full">
+      <div class="max-w-3xl mx-auto px-0 mb-0">
+        <hr class="border-border" aria-hidden="true">
+      </div>
+
+      <div class="flex flex-col items-center justify-between py-6 sm:flex-row-reverse sm:py-4 max-w-7xl mx-auto px-6">
+        <div class="flex-wrap justify-center gap-1 flex">
+          <a href="https://github.com/keyurbhatiya" target="_blank"
+            class="group inline-block hover:text-accent p-2 hover:scale-110 transition sm:p-1"
+            title="GitHub">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"
+                class="inline-block size-6 scale-125 fill-transparent stroke-current stroke-2 opacity-90 group-hover:fill-transparent sm:scale-110">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5
+                      c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6
+                      a4.6 4.6 0 0 0 -1.3 -3.2
+                      a4.2 4.2 0 0 0 -.1 -3.2
+                      s-1.1 -.3 -3.5 1.3
+                      a12.3 12.3 0 0 0 -6.2 0
+                      c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3
+                      a4.2 4.2 0 0 0 -.1 3.2
+                      a4.6 4.6 0 0 0 -1.3 3.2
+                      c0 4.6 2.7 5.7 5.5 6
+                      c-.6 .6 -.6 1.2 -.5 2v3.5"/>
+            </svg>
+            <span class="sr-only">GitHub</span>
+          </a>
+
+          <a href="https://linkedin.com/in/keyurbhatiya" target="_blank"
+            class="group inline-block hover:text-accent p-2 hover:scale-110 transition sm:p-1"
+            title="LinkedIn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"
+                class="inline-block size-6 scale-125 fill-transparent stroke-current stroke-2 opacity-90 group-hover:fill-transparent sm:scale-110">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M8 11v5"/>
+              <path d="M8 8v.01"/>
+              <path d="M12 16v-5"/>
+              <path d="M16 16v-3a2 2 0 1 0 -4 0"/>
+              <path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10
+                      a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z"/>
+            </svg>
+            <span class="sr-only">LinkedIn</span>
+          </a>
+          <a href="https://x.com/keyur_bhatiya" target="_blank" class="group inline-block p-2 hover:rotate-6 transition-transform sm:p-1" title="keyur_bhatiya on X">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block scale-125 stroke-current opacity-90 group-hover:stroke-accent sm:scale-110">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
+                <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
+              </svg>
+              <span class="sr-only">keyrur_bhatiya on X</span>
+            </a>
+          <!-- intagram -->
+          <a href="https://instagram.com/keyur_bhatiya" target="_blank"
+            class="group inline-block hover:text-accent p-2 hover:scale-110 transition sm:p-1"
+            title="Instagram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"
+                class="inline-block size-6 scale-125 fill-transparent stroke-current stroke-2 opacity-90 group-hover:fill-transparent sm:scale-110">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <rect x="4" y="4" width="16" height="16" rx="4"/>
+              <circle cx="12" cy="12" r="3"/>
+              <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"/>
+            </svg>
+            <span class="sr-only">Instagram</span>
+
+          <a href="mailto:keyurbhatiya29@gmail.com"
+            class="group inline-block hover:text-accent p-2 hover:scale-110 transition sm:p-1"
+            title="Send Email">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round"
+                class="inline-block size-6 scale-125 fill-transparent stroke-current stroke-2 opacity-90 group-hover:fill-transparent sm:scale-110">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M3 7a2 2 0 0 1 2 -2h14
+                      a2 2 0 0 1 2 2v10
+                      a2 2 0 0 1 -2 2h-14
+                      a2 2 0 0 1 -2 -2v-10z"/>
+              <path d="M3 7l9 6l9 -6"/>
+            </svg>
+            <span class="sr-only">Email</span>
+          </a>
+        </div>
+
+        <div class="my-2 flex flex-col items-center whitespace-nowrap sm:flex-row">
+          <span>Copyright © 2025 <a href="https://linkedin.com/in/keyurbhatiya" target="_blank">Keyur Bhatiya</a></span>
+          <span class="hidden sm:inline">&nbsp;|&nbsp;</span>
+          <span>All rights reserved.</span>
+        </div>
+      </div>
+    </footer>
+
+  <div id="backToTop" class="fade-in"><i class="fas fa-arrow-up"></i></div>
+
+  <script>
+    // Preloader
+    window.addEventListener('load', () => {
+      document.getElementById('preloader').style.display = 'none';
+    });
+
+    // Fade-in
+    const fadeIns = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    fadeIns.forEach(element => observer.observe(element));
+
+    // Back-to-Top
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => { backToTop.style.display = window.scrollY > 300 ? 'flex' : 'none'; });
+    backToTop.addEventListener('click', () => { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+    // Theme Toggle
+    const html = document.documentElement;
+    const themeBtn = document.getElementById('theme-btn');
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      html.classList.add('dark');
+    } else {
+      html.classList.remove('dark');
+    }
+    themeBtn.addEventListener('click', () => {
+      if (html.classList.contains('dark')) {
+        html.classList.remove('dark');
+        localStorage.theme = 'light';
+      } else {
+        html.classList.add('dark');
+        localStorage.theme = 'dark';
+      }
+    });
+  </script>
+</body>
+</html>
