@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Block admin or system paths if exists (optional)
+# Disallow: /admin/
+
+Sitemap: https://www.keyurbhatiya.com/sitemap.xml

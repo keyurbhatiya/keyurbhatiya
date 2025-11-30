@@ -1,0 +1,21 @@
+# LLM & AI Crawler Sitemap Reference
+User-agent: GPTBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+Sitemap: https://www.keyurbhatiya.com/sitemap.xml
+
+# Portfolio Site Description for AI
+SiteName: Keyur Bhatiya Portfolio
+Focus: Python, Django, Flask, AI, LLMs, Automation, Data Visualization
+Owner: Keyur Bhatiya
+Location: India
+URL: https://www.keyurbhatiya.com/
+
+# Crawling Preferences
+DynamicContent: Yes
+SinglePageApp: No (Static One Page with Hash Sections)
+BlogAvailable: Yes (#blog)
+ProjectShowcase: Yes (#projects)
