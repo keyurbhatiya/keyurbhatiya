@@ -1,493 +1,981 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Keyur Bhatiya | Python Developer & AI Enthusiast</title>
-    <meta name="description" content="Portfolio of Keyur Bhatiya - Python Developer specializing in Django, Flask, AI Integration, and Data Visualization.">
-    <meta name="keywords" content="Keyur Bhatiya, Python Developer, Django, Flask, AI, Automation, Portfolio, Web Development">
-    <meta name="author" content="Keyur Bhatiya">
-    
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://keyurbhatiya.com/">
-    <meta property="og:title" content="Keyur Bhatiya | Python Developer & AI Enthusiast">
-    <meta property="og:description" content="Sharing insights, tutorials on Python, AI, data visualization, and building scalable web apps.">
-    <meta property="og:image" content="https://keyurbhatiya.com/KeyurBhatiya-Cover.jpg">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://keyurbhatiya.com/">
-    <meta property="twitter:title" content="Keyur Bhatiya | Python Developer">
-    <meta property="twitter:description" content="Python developer, AI enthusiast, and tech lover.">
-    <meta property="twitter:image" content="https://keyurbhatiya.com/KeyurBhatiya-Cover.jpg">
+  <title>keyurbhatiya.com | Python Developer & AI & ML Enthusiast</title>
+  <meta name="title" content="keyurbhatiya.com" />
+  <meta name="description" content="Python development, AI insights, and personal experiences by Keyur Bhatiya." />
+  <meta name="author" content="Keyur Bhatiya" />
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="canonical" href="https://keyurbhatiya.com/" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                    colors: {
-                        primary: '#0f172a', // Slate 900
-                        secondary: '#334155', // Slate 700
-                        accent: '#2563eb', // Blue 600
-                        bgLight: '#f8fafc', // Slate 50
-                    },
-                    animation: {
-                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
-                    },
-                    keyframes: {
-                        fadeInUp: {
-                            '0%': { opacity: '0', transform: 'translateY(20px)' },
-                            '100%': { opacity: '1', transform: 'translateY(0)' },
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+  <!-- Open Graph -->
+  <meta property="og:title" content="keyurbhatiya.com" />
+  <meta property="og:description" content="Python development, AI insights, and personal experiences by Keyur Bhatiya." />
+  <meta property="og:url" content="https://keyurbhatiya.com/" />
+  <meta property="og:image" content="https://keyurbhatiya.com/KeyurBhatiya-Cover.jpg" />
 
-    <style>
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #f1f1f1; }
-        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
-    </style>
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://keyurbhatiya.com/" />
+  <meta property="twitter:title" content="keyurbhatiya.com" />
+  <meta property="twitter:description" content="Python development, AI insights, and personal experiences by Keyur Bhatiya." />
+  <meta property="twitter:image" content="https://keyurbhatiya.com/KeyurBhatiya-Cover.jpg" />
+
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "keyurbhatiya.com",
+    "image": "https://keyurbhatiya.com/KeyurBhatiya-Cover.jpg",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "Keyur Bhatiya",
+        "url": "https://keyurbhatiya.com/about"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Inter Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Tailwind config (must be BEFORE CDN script) -->
+  <script>
+    tailwind = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              DEFAULT: '#2563eb',
+              50: '#eff6ff',
+              100: '#dbeafe',
+              600: '#2563eb',
+              700: '#1d4ed8',
+            },
+          },
+          keyframes: {
+            'fade-in-up': {
+              '0%': { opacity: '0', transform: 'translateY(24px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+          },
+          animation: {
+            'fade-in-up': 'fade-in-up 0.8s ease-out both',
+          },
+          boxShadow: {
+            soft: '0 18px 45px rgba(15,23,42,0.12)',
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body class="bg-bgLight text-slate-800 antialiased selection:bg-blue-100 selection:text-blue-900">
 
-    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16 items-center">
-                <div class="flex-shrink-0 flex items-center">
-                    <a href="#" class="text-2xl font-bold tracking-tight text-primary">KB<span class="text-accent">.</span></a>
-                </div>
-                
-                <div class="hidden md:flex space-x-8 items-center">
-                    <a href="#about" class="text-sm font-medium text-slate-600 hover:text-accent transition">About</a>
-                    <a href="#skills" class="text-sm font-medium text-slate-600 hover:text-accent transition">Skills</a>
-                    <a href="#services" class="text-sm font-medium text-slate-600 hover:text-accent transition">What I Do</a>
-                    <a href="#projects" class="text-sm font-medium text-slate-600 hover:text-accent transition">Projects</a>
-                    <a href="#contact" class="px-5 py-2.5 rounded-full bg-primary text-white text-sm font-medium hover:bg-slate-800 transition shadow-lg shadow-slate-200">Contact Me</a>
-                </div>
+<body class="bg-slate-50 text-slate-900 font-sans antialiased">
+  <div class="min-h-screen flex flex-col">
 
-                <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-primary focus:outline-none">
-                        <i data-lucide="menu" class="w-6 h-6"></i>
-                    </button>
-                </div>
-            </div>
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 border-b border-slate-200/70 bg-white/80 backdrop-blur-md">
+      <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8 py-4">
+        <!-- Logo / Brand -->
+        <a href="#home" class="flex items-center gap-3">
+          <div class="flex h-9 w-9 items-center justify-center rounded-2xl bg-blue-600 text-white shadow-sm">
+            <span class="text-lg font-semibold">KB</span>
+          </div>
+          <div class="flex flex-col leading-tight">
+            <span class="text-sm font-semibold tracking-tight">keyurbhatiya.com</span>
+            <span class="text-xs text-slate-500">Python • AI • Tech</span>
+          </div>
+        </a>
+
+        <!-- Desktop Nav -->
+        <div class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-600">
+          <a href="#home" class="hover:text-slate-900 transition-colors">Home</a>
+          <a href="#about" class="hover:text-slate-900 transition-colors">About</a>
+          <a href="#skills" class="hover:text-slate-900 transition-colors">Skills</a>
+          <a href="#projects" class="hover:text-slate-900 transition-colors">Projects</a>
+          <a href="#blog" class="hover:text-slate-900 transition-colors">Blog</a>
+          <a href="#contact" class="hover:text-slate-900 transition-colors">Contact</a>
         </div>
 
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 absolute w-full shadow-xl">
-            <div class="px-4 pt-2 pb-6 space-y-2">
-                <a href="#about" class="block px-3 py-3 rounded-md text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-accent">About</a>
-                <a href="#skills" class="block px-3 py-3 rounded-md text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-accent">Skills</a>
-                <a href="#projects" class="block px-3 py-3 rounded-md text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-accent">Projects</a>
-                <a href="#contact" class="block px-3 py-3 mt-4 text-center rounded-lg bg-primary text-white font-medium">Contact Me</a>
-            </div>
+        <!-- Mobile Menu Button -->
+        <button
+          type="button"
+          class="inline-flex md:hidden items-center justify-center rounded-xl border border-slate-200 bg-white px-3 py-2 text-slate-600 shadow-sm hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-slate-50"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+          id="mobile-menu-button"
+        >
+          <i data-lucide="menu" class="h-5 w-5"></i>
+        </button>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden border-t border-slate-200 bg-white/90 backdrop-blur-md hidden">
+        <div class="mx-auto flex max-w-6xl flex-col space-y-1 px-4 py-3 text-sm font-medium text-slate-700">
+          <a href="#home" class="rounded-lg px-3 py-2 hover:bg-slate-100">Home</a>
+          <a href="#about" class="rounded-lg px-3 py-2 hover:bg-slate-100">About</a>
+          <a href="#skills" class="rounded-lg px-3 py-2 hover:bg-slate-100">Skills</a>
+          <a href="#projects" class="rounded-lg px-3 py-2 hover:bg-slate-100">Projects</a>
+          <a href="#blog" class="rounded-lg px-3 py-2 hover:bg-slate-100">Blog</a>
+          <a href="#contact" class="rounded-lg px-3 py-2 hover:bg-slate-100">Contact</a>
         </div>
-    </nav>
-<!-- Hero -->
-    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center animate-fade-in-up">
-            <span class="inline-block py-1 px-3 rounded-full bg-blue-50 text-blue-600 text-sm font-semibold mb-6 border border-blue-100">
-                👋 Hey, I'm Keyur Bhatiya
-            </span>
-            <h1 class="text-5xl md:text-7xl font-bold text-primary tracking-tight mb-6">
-                Python Developer & <br class="hidden md:block" /> 
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-500">AI Enthusiast.</span>
-            </h1>
-            <p class="mt-4 max-w-2xl mx-auto text-xl text-slate-600 leading-relaxed">
-                Building intelligent, scalable, and efficient web applications using <strong>Django, Flask, and AI</strong>. I turn complex data into clean digital solutions.
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="flex-1">
+
+      <!-- Hero -->
+      <section id="home" class="relative overflow-hidden">
+        <!-- Background blobs -->
+        <div class="pointer-events-none absolute -top-40 -right-32 h-80 w-80 rounded-full bg-blue-500/25 blur-3xl"></div>
+        <div class="pointer-events-none absolute -bottom-48 -left-40 h-96 w-96 rounded-full bg-indigo-500/20 blur-3xl"></div>
+
+        <div class="relative mx-auto flex max-w-6xl flex-col items-center px-4 pt-16 pb-20 sm:px-6 md:pt-24 lg:px-8 lg:pb-24">
+          <div class="max-w-3xl text-center animate-fade-in-up">
+            <p class="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/80 px-3 py-1 text-xs font-medium text-slate-600 shadow-sm">
+              <span class="inline-flex h-2 w-2 rounded-full bg-blue-500"></span>
+              Python Developer • AI & ML Enthusiast
             </p>
-            <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#projects" class="px-8 py-3.5 rounded-full bg-primary text-white font-medium hover:bg-slate-800 transition shadow-xl shadow-slate-200 flex items-center justify-center gap-2">
-                    View Projects <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                </a>
-                <a href="https://drive.google.com/file/d/1oYczqNrB-vM8mjjVsPKE_fgsKOXxROlm/view?usp=sharing" target="_blank" class="px-8 py-3.5 rounded-full bg-white text-slate-700 border border-slate-200 font-medium hover:bg-slate-50 transition flex items-center justify-center gap-2">
-                    <i data-lucide="download" class="w-4 h-4"></i> Download Resume
-                </a>
-            </div>
-            
-            <div class="mt-12 flex justify-center gap-6 text-slate-400">
-                <a href="https://github.com/keyurbhatiya" target="_blank" class="hover:text-primary transition hover:scale-110"><i data-lucide="github" class="w-6 h-6"></i></a>
-                <a href="https://linkedin.com/in/keyurbhatiya" target="_blank" class="hover:text-blue-600 transition hover:scale-110"><i data-lucide="linkedin" class="w-6 h-6"></i></a>
-                <a href="https://x.com/keyur_bhatiya" target="_blank" class="hover:text-black transition hover:scale-110"><i data-lucide="twitter" class="w-6 h-6"></i></a>
-                <a href="https://instagram.com/keyur_bhatiya" target="_blank" class="hover:text-pink-600 transition hover:scale-110"><i data-lucide="instagram" class="w-6 h-6"></i></a>
-            </div>
-        </div>
-        
-        <div class="absolute top-0 left-1/2 w-full -translate-x-1/2 h-full z-0 pointer-events-none opacity-40">
-            <div class="absolute top-20 left-10 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
-            <div class="absolute top-20 right-10 w-72 h-72 bg-indigo-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
-        </div>
-    </section>
+            <h1 class="mt-6 text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+              Hey, I'm <span class="text-slate-900">Keyur Bhatiya</span><br />
+              <span class="bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-400 bg-clip-text text-transparent">
+                building intelligent Python solutions
+              </span>
+              and sharing AI insights.
+            </h1>
+            <p class="mt-5 text-base sm:text-lg text-slate-600">
+              A Python developer and AI & ML Enthusiast focused on backend development, AI integration, and
+              data-driven applications. I love turning complex ideas into clean, scalable, real-world projects.
+            </p>
 
-    <section id="about" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                <div class="relative">
-                    <div class="aspect-square rounded-2xl overflow-hidden bg-slate-100 shadow-2xl relative z-10 max-w-md mx-auto border border-slate-100">
-                        <img src="https://placehold.co/600x600/e2e8f0/475569?text=Keyur+Bhatiya" alt="Keyur Bhatiya" class="object-cover w-full h-full transform hover:scale-105 transition duration-500">
+            <!-- CTAs -->
+            <div class="mt-8 flex flex-wrap justify-center gap-4">
+              <a
+                href="#projects"
+                class="inline-flex items-center justify-center rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-soft hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-slate-50"
+              >
+                View Projects
+              </a>
+              <a
+                href="https://drive.google.com/file/d/1oYczqNrB-vM8mjjVsPKE_fgsKOXxROlm/view?usp=sharing"
+                target="_blank"
+                class="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white/80 px-6 py-3 text-sm font-semibold text-slate-900 shadow-sm hover:border-blue-400 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-slate-50"
+              >
+                Download Resume
+                <i data-lucide="download" class="ml-2 h-4 w-4"></i>
+              </a>
+            </div>
+
+            <!-- Social -->
+            <div class="mt-10 flex flex-wrap items-center justify-center gap-4 text-slate-500">
+              <a href="https://github.com/keyurbhatiya" target="_blank"
+                 class="group inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white/80 shadow-sm hover:border-blue-500 hover:text-blue-600">
+                <i data-lucide="github" class="h-5 w-5"></i>
+              </a>
+              <a href="https://linkedin.com/in/keyurbhatiya" target="_blank"
+                 class="group inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white/80 shadow-sm hover:border-blue-500 hover:text-blue-600">
+                <i data-lucide="linkedin" class="h-5 w-5"></i>
+              </a>
+              <a href="https://x.com/keyur_bhatiya" target="_blank"
+                class="group inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white/80 shadow-sm hover:border-blue-500 hover:text-blue-600">
+                    <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
+                    </svg>
+                </a>
+              <a href="https://instagram.com/keyur_bhatiya" target="_blank"
+                 class="group inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white/80 shadow-sm hover:border-blue-500 hover:text-blue-600">
+                <i data-lucide="instagram" class="h-5 w-5"></i>
+              </a>
+              <a href="mailto:keyurbhatiya.dev@gmail.com"
+                 class="group inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white/80 shadow-sm hover:border-blue-500 hover:text-blue-600">
+                <i data-lucide="mail" class="h-5 w-5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="py-16 sm:py-20">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div class="mb-10 flex items-center justify-between gap-4">
+            <div>
+              <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight text-slate-900">About Me</h2>
+              <p class="mt-2 text-sm text-slate-500">
+                Python, AI, and building things that actually ship.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid gap-12 md:grid-cols-2 md:items-center">
+            <!-- Visual -->
+            <div class="relative">
+              <!-- Decorative dot pattern -->
+              <div
+                class="pointer-events-none absolute -left-4 -top-4 h-24 w-24 rounded-3xl border border-dashed border-slate-200"
+              ></div>
+              <div class="pointer-events-none absolute bottom-0 right-0 h-16 w-16 rounded-2xl bg-blue-50"></div>
+
+              <div class="relative rounded-2xl bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-[2px] shadow-soft">
+                <div class="flex h-64 w-full items-center justify-center rounded-2xl bg-slate-950">
+                  <div class="flex flex-col items-center gap-3 px-6 text-center">
+                    <div class="flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-600/90">
+                      <i data-lucide="code" class="h-9 w-9 text-white"></i>
                     </div>
-                    <div class="absolute -bottom-6 -right-6 w-24 h-24 text-blue-100 z-0">
-                        <svg fill="currentColor" viewBox="0 0 100 100"><pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="2"></circle></pattern><rect width="100" height="100" fill="url(#dots)"></rect></svg>
-                    </div>
+                    <p class="text-sm font-medium text-slate-100">
+                      Python Developer • AI & ML Enthusiast
+                    </p>
+                    <p class="text-xs text-slate-400">
+                      Building AI-powered assistants, web apps, and tools with Django, Flask, Streamlit, and modern LLMs.
+                    </p>
+                  </div>
                 </div>
-                
+              </div>
+            </div>
+
+            <!-- Text -->
+            <div class="space-y-6">
+              <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+                Hi! I'm <span class="font-semibold text-slate-900">Keyur Bhatiya</span>, a Python developer with a
+                passion for building intelligent, scalable, and efficient web applications. I specialize in
+                <span class="font-medium">AI integration, backend development, and data visualization</span> — turning
+                complex ideas into clean, high-performing digital experiences.
+              </p>
+              <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+                I’ve developed projects ranging from <span class="font-medium">AI-powered assistants</span> and
+                <span class="font-medium">Flask/Django web apps</span> to
+                <span class="font-medium">Streamlit dashboards</span> and
+                <span class="font-medium">data-driven platforms</span>. My focus is always on writing optimized,
+                maintainable, and secure code that scales with real users.
+              </p>
+              <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+                I’m constantly learning new tools in the Python ecosystem — from <span class="font-medium">FastAPI</span>
+                and <span class="font-medium">Tailwind CSS</span> to databases like
+                <span class="font-medium">PostgreSQL</span> and <span class="font-medium">MySQL</span>.
+              </p>
+
+              <div class="grid gap-4 sm:grid-cols-2">
+                <div class="rounded-2xl border border-slate-200 bg-white/80 px-5 py-4 shadow-sm">
+                  <p class="text-xs font-medium uppercase tracking-wide text-slate-500">Projects</p>
+                  <p class="mt-2 text-2xl font-semibold text-slate-900">10+ </p>
+                  <p class="mt-1 text-xs text-slate-500">
+                    Real-world apps in AI, Flask/Django, and data-driven experiences.
+                  </p>
+                </div>
+                <div class="rounded-2xl border border-slate-200 bg-white/80 px-5 py-4 shadow-sm">
+                  <p class="text-xs font-medium uppercase tracking-wide text-slate-500">Content & Learning</p>
+                  <p class="mt-2 text-2xl font-semibold text-slate-900">Active</p>
+                  <p class="mt-1 text-xs text-slate-500">
+                    Publishing Python & AI tutorials, tips, and experiments regularly.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="py-16 sm:py-20 border-t border-slate-200/70 bg-white/70">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div class="mb-10 flex items-center justify-between gap-4">
+            <div>
+              <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight text-slate-900">Skills & Stack</h2>
+              <p class="mt-2 text-sm text-slate-500">
+                Tools I use to build, ship, and scale products.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            <!-- Backend -->
+            <div class="rounded-2xl border border-slate-200 bg-slate-50/80 p-5 shadow-sm">
+              <div class="flex items-center gap-2">
+                <i data-lucide="server" class="h-5 w-5 text-blue-600"></i>
+                <h3 class="text-sm font-semibold text-slate-900">Backend</h3>
+              </div>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="inline-flex rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700">Python</span>
+                <span class="inline-flex rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700">Django</span>
+                <span class="inline-flex rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700">Flask</span>
+                <span class="inline-flex rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700">FastAPI</span>
+                <span class="inline-flex rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700">REST APIs</span>
+              </div>
+            </div>
+
+            <!-- Frontend -->
+            <div class="rounded-2xl border border-slate-200 bg-slate-50/80 p-5 shadow-sm">
+              <div class="flex items-center gap-2">
+                <i data-lucide="layout" class="h-5 w-5 text-blue-600"></i>
+                <h3 class="text-sm font-semibold text-slate-900">Frontend</h3>
+              </div>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="inline-flex rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700">HTML</span>
+                <span class="inline-flex rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700">Tailwind CSS</span>
+                <span class="inline-flex rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700">Bootstrap</span>
+                <span class="inline-flex rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700">JavaScript</span>
+              </div>
+            </div>
+
+            <!-- Database -->
+            <div class="rounded-2xl border border-slate-200 bg-slate-50/80 p-5 shadow-sm">
+              <div class="flex items-center gap-2">
+                <i data-lucide="database" class="h-5 w-5 text-blue-600"></i>
+                <h3 class="text-sm font-semibold text-slate-900">Database</h3>
+              </div>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="inline-flex rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700">PostgreSQL</span>
+                <span class="inline-flex rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700">MySQL</span>
+                <span class="inline-flex rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700">SQLite</span>
+              </div>
+            </div>
+
+            <!-- Tools & AI -->
+            <div class="rounded-2xl border border-slate-200 bg-slate-50/80 p-5 shadow-sm">
+              <div class="flex items-center gap-2">
+                <i data-lucide="sparkles" class="h-5 w-5 text-blue-600"></i>
+                <h3 class="text-sm font-semibold text-slate-900">Tools & AI</h3>
+              </div>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="inline-flex rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700">OpenAI / LLMs</span>
+                <span class="inline-flex rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700">Groq API</span>
+                <span class="inline-flex rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700">Streamlit</span>
+                <span class="inline-flex rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700">Git & GitHub</span>
+                <span class="inline-flex rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700">VSCode</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services / What I Do -->
+      <section id="services" class="py-16 sm:py-20">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div class="mb-10 flex items-center justify-between gap-4">
+            <div>
+              <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight text-slate-900">What I Do</h2>
+              <p class="mt-2 text-sm text-slate-500">
+                From ideas to deployed, production-ready solutions.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            <!-- Service 1 -->
+            <article class="group relative rounded-2xl border border-slate-200 bg-white/80 p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl">
+              <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
+                <i data-lucide="code2" class="h-5 w-5"></i>
+              </div>
+              <h3 class="mt-5 text-sm font-semibold text-slate-900">Backend & APIs</h3>
+              <p class="mt-2 text-xs text-slate-600">
+                Designing clean, secure backends and REST APIs using Django, Flask, and FastAPI with proper auth, validations, and docs.
+              </p>
+            </article>
+
+            <!-- Service 2 -->
+            <article class="group relative rounded-2xl border border-slate-200 bg-white/80 p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl">
+              <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
+                <i data-lucide="cpu" class="h-5 w-5"></i>
+              </div>
+              <h3 class="mt-5 text-sm font-semibold text-slate-900">AI-Powered Tools</h3>
+              <p class="mt-2 text-xs text-slate-600">
+                Integrating LLMs, RAG pipelines, and AI APIs to build assistants, analyzers, and automation tools that save time.
+              </p>
+            </article>
+
+            <!-- Service 3 -->
+            <article class="group relative rounded-2xl border border-slate-200 bg-white/80 p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl">
+              <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
+                <i data-lucide="bar-chart-3" class="h-5 w-5"></i>
+              </div>
+              <h3 class="mt-5 text-sm font-semibold text-slate-900">Dashboards & Visualization</h3>
+              <p class="mt-2 text-xs text-slate-600">
+                Building Streamlit dashboards and analytics views that transform raw data into clear, interactive insights.
+              </p>
+            </article>
+
+            <!-- Service 4 -->
+            <article class="group relative rounded-2xl border border-slate-200 bg-white/80 p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl">
+              <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
+                <i data-lucide="cloud-upload" class="h-5 w-5"></i>
+              </div>
+              <h3 class="mt-5 text-sm font-semibold text-slate-900">Deployment & SaaS</h3>
+              <p class="mt-2 text-xs text-slate-600">
+                Deploying projects to platforms like Render and cloud services, handling configs, envs, and performance basics.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Projects -->
+      <section id="projects" class="py-16 sm:py-20 border-t border-slate-200/70 bg-white/80">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div class="mb-10 flex items-center justify-between gap-4">
+            <div>
+              <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight text-slate-900">Projects</h2>
+              <p class="mt-2 text-sm text-slate-500">
+                A few things I’ve built recently.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <!-- AcademicHub -->
+            <article class="flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white/90 shadow-sm">
+              <div class="relative h-40 bg-slate-900/95">
+                <div class="absolute inset-0 bg-gradient-to-tr from-blue-500/35 via-slate-900/80 to-indigo-500/40"></div>
+                <div class="relative flex h-full items-center justify-center">
+                  <div class="rounded-2xl border border-white/15 bg-black/30 px-4 py-2 text-xs font-medium uppercase tracking-wide text-slate-100">
+                    AcademicHub
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-1 flex-col p-5">
+                <div class="flex items-center justify-between text-xs text-slate-500">
+                  <span class="rounded-full bg-slate-100 px-2.5 py-1 text-[0.65rem] font-medium uppercase tracking-wide text-slate-700">
+                    Oct 10, 2025
+                  </span>
+                  <span>Full-stack · Dashboard</span>
+                </div>
+                <h3 class="mt-3 text-sm font-semibold text-slate-900">Academic resource platform</h3>
+                <p class="mt-2 text-xs text-slate-600">
+                  Academic resource management app with admin dashboard, analytics, content moderation, and responsive UI.
+                </p>
+                <p class="mt-3 text-[0.7rem] italic text-slate-500">
+                  Tech stack: Django, Tailwind, PostgreSQL, Cloudinary
+                </p>
+                <div class="mt-4 flex gap-2">
+                  <a href="https://academichub-frio.onrender.com" target="_blank"
+                     class="inline-flex flex-1 items-center justify-center rounded-full bg-blue-600 px-3 py-2 text-xs font-semibold text-white hover:bg-blue-700">
+                    Live Demo
+                  </a>
+                  <a href="https://github.com/keyurbhatiya/academichub" target="_blank"
+                     class="inline-flex flex-1 items-center justify-center rounded-full border border-slate-200 px-3 py-2 text-xs font-semibold text-slate-800 hover:border-blue-400">
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- QuickShare -->
+            <article class="flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white/90 shadow-sm">
+              <div class="relative h-40 bg-slate-900/95">
+                <div class="absolute inset-0 bg-gradient-to-tr from-indigo-500/40 via-slate-900/80 to-blue-500/30"></div>
+                <div class="relative flex h-full items-center justify-center">
+                  <div class="rounded-2xl border border-white/15 bg-black/30 px-4 py-2 text-xs font-medium uppercase tracking-wide text-slate-100">
+                    QuickShare
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-1 flex-col p-5">
+                <div class="flex items-center justify-between text-xs text-slate-500">
+                  <span class="rounded-full bg-slate-100 px-2.5 py-1 text-[0.65rem] font-medium uppercase tracking-wide text-slate-700">
+                    Sep 25, 2025
+                  </span>
+                  <span>Security · Utility</span>
+                </div>
+                <h3 class="mt-3 text-sm font-semibold text-slate-900">File sharing service</h3>
+                <p class="mt-2 text-xs text-slate-600">
+                  Secure file & link sharing with short codes and auto-expiring content that’s deleted from the server after 5 minutes.
+                </p>
+                <p class="mt-3 text-[0.7rem] italic text-slate-500">
+                  Tech stack: Flask, FastAPI, Tailwind
+                </p>
+                <div class="mt-4 flex gap-2">
+                  <a href="https://quickshare-it.onrender.com" target="_blank"
+                     class="inline-flex flex-1 items-center justify-center rounded-full bg-blue-600 px-3 py-2 text-xs font-semibold text-white hover:bg-blue-700">
+                    Live Demo
+                  </a>
+                  <a href="https://github.com/keyurbhatiya/QuickShare.git" target="_blank"
+                     class="inline-flex flex-1 items-center justify-center rounded-full border border-slate-200 px-3 py-2 text-xs font-semibold text-slate-800 hover:border-blue-400">
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Jarvis AI Assistant -->
+            <article class="flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white/90 shadow-sm">
+              <div class="relative h-40 bg-slate-900/95">
+                <div class="absolute inset-0 bg-gradient-to-tr from-blue-500/25 via-slate-900/85 to-indigo-600/40"></div>
+                <div class="relative flex h-full items-center justify-center">
+                  <div class="rounded-2xl border border-white/15 bg-black/30 px-4 py-2 text-xs font-medium uppercase tracking-wide text-slate-100">
+                    Jarvis AI Assistant
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-1 flex-col p-5">
+                <div class="flex items-center justify-between text-xs text-slate-500">
+                  <span class="rounded-full bg-slate-100 px-2.5 py-1 text-[0.65rem] font-medium uppercase tracking-wide text-slate-700">
+                    Jun 6, 2025
+                  </span>
+                  <span>Desktop · AI</span>
+                </div>
+                <h3 class="mt-3 text-sm font-semibold text-slate-900">Voice-powered desktop AI</h3>
+                <p class="mt-2 text-xs text-slate-600">
+                  An AI-powered desktop assistant with biometric login, voice commands, and hybrid offline/online LLM modes.
+                </p>
+                <p class="mt-3 text-[0.7rem] italic text-slate-500">
+                  Tech stack: Python, Flask, Groq API, Edge-TTS, Pygame
+                </p>
+                <div class="mt-4 flex gap-2">
+                  <a href="https://github.com/keyurbhatiya/Jarvis_ai_2025.git" target="_blank"
+                     class="inline-flex flex-1 items-center justify-center rounded-full bg-blue-600 px-3 py-2 text-xs font-semibold text-white hover:bg-blue-700">
+                    GitHub
+                  </a>
+                  <a href="https://github.com/keyurbhatiya/Jarvis_ai_2025.git" target="_blank"
+                     class="inline-flex flex-1 items-center justify-center rounded-full border border-slate-200 px-3 py-2 text-xs font-semibold text-slate-800 hover:border-blue-400">
+                    Demo Video
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- AI Resume Critiquer -->
+            <article class="flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white/90 shadow-sm">
+              <div class="relative h-40 bg-slate-900/95">
+                <div class="absolute inset-0 bg-gradient-to-tr from-sky-500/25 via-slate-900/80 to-emerald-500/35"></div>
+                <div class="relative flex h-full items-center justify-center">
+                  <div class="rounded-2xl border border-white/15 bg-black/30 px-4 py-2 text-xs font-medium uppercase tracking-wide text-slate-100">
+                    AI Resume Critiquer
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-1 flex-col p-5">
+                <div class="flex items-center justify-between text-xs text-slate-500">
+                  <span class="rounded-full bg-slate-100 px-2.5 py-1 text-[0.65rem] font-medium uppercase tracking-wide text-slate-700">
+                    May 17, 2025
+                  </span>
+                  <span>AI · NLP</span>
+                </div>
+                <h3 class="mt-3 text-sm font-semibold text-slate-900">Smart resume analyzer</h3>
+                <p class="mt-2 text-xs text-slate-600">
+                  AI/NLP-powered tool to analyze resumes and provide suggestions and improvement tips in seconds.
+                </p>
+                <p class="mt-3 text-[0.7rem] italic text-slate-500">
+                  Tech stack: Streamlit, OpenAI API, Python
+                </p>
+                <div class="mt-4 flex gap-2">
+                  <a href="https://github.com/keyurbhatiya/AI-Resume-Critiquer.git" target="_blank"
+                     class="inline-flex flex-1 items-center justify-center rounded-full bg-blue-600 px-3 py-2 text-xs font-semibold text-white hover:bg-blue-700">
+                    GitHub
+                  </a>
+                  <a href="https://github.com/keyurbhatiya/AI-Resume-Critiquer.git" target="_blank"
+                     class="inline-flex flex-1 items-center justify-center rounded-full border border-slate-200 px-3 py-2 text-xs font-semibold text-slate-800 hover:border-blue-400">
+                    Live Demo
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Sassy Chatbot -->
+            <article class="flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white/90 shadow-sm">
+              <div class="relative h-40 bg-slate-900/95">
+                <div class="absolute inset-0 bg-gradient-to-tr from-pink-500/30 via-slate-900/80 to-purple-500/35"></div>
+                <div class="relative flex h-full items-center justify-center">
+                  <div class="rounded-2xl border border-white/15 bg-black/30 px-4 py-2 text-xs font-medium uppercase tracking-wide text-slate-100">
+                    Sassy Chatbot
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-1 flex-col p-5">
+                <div class="flex items-center justify-between text-xs text-slate-500">
+                  <span class="rounded-full bg-slate-100 px-2.5 py-1 text-[0.65rem] font-medium uppercase tracking-wide text-slate-700">
+                    Aug 22, 2025
+                  </span>
+                  <span>Web · Chat</span>
+                </div>
+                <h3 class="mt-3 text-sm font-semibold text-slate-900">Sassy Chatbot Web App</h3>
+                <p class="mt-2 text-xs text-slate-600">
+                  Interactive chatbot web app with personality settings, built for playful real-time conversations.
+                </p>
+                <p class="mt-3 text-[0.7rem] italic text-slate-500">
+                  Tech stack: Streamlit, Python, Groq API
+                </p>
+                <div class="mt-4 flex gap-2">
+                  <a href="https://github.com/keyurbhatiya/Sassy-Chatbot.git" target="_blank"
+                     class="inline-flex flex-1 items-center justify-center rounded-full bg-blue-600 px-3 py-2 text-xs font-semibold text-white hover:bg-blue-700">
+                    GitHub
+                  </a>
+                  <a href="https://github.com/keyurbhatiya/Sassy-Chatbot.git" target="_blank"
+                     class="inline-flex flex-1 items-center justify-center rounded-full border border-slate-200 px-3 py-2 text-xs font-semibold text-slate-800 hover:border-blue-400">
+                    Live Demo
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- RepoDoc -->
+            <article class="flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white/90 shadow-sm">
+              <div class="relative h-40 bg-slate-900/95">
+                <div class="absolute inset-0 bg-gradient-to-tr from-amber-500/25 via-slate-900/80 to-blue-500/35"></div>
+                <div class="relative flex h-full items-center justify-center">
+                  <div class="rounded-2xl border border-white/15 bg-black/30 px-4 py-2 text-xs font-medium uppercase tracking-wide text-slate-100">
+                    RepoDoc
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-1 flex-col p-5">
+                <div class="flex items-center justify-between text-xs text-slate-500">
+                  <span class="rounded-full bg-slate-100 px-2.5 py-1 text-[0.65rem] font-medium uppercase tracking-wide text-slate-700">
+                    Aug 30, 2025
+                  </span>
+                  <span>Dev Tool</span>
+                </div>
+                <h3 class="mt-3 text-sm font-semibold text-slate-900">AI README generator</h3>
+                <p class="mt-2 text-xs text-slate-600">
+                  Flask-based tool that analyzes public GitHub repos and generates professional README files automatically.
+                </p>
+                <p class="mt-3 text-[0.7rem] italic text-slate-500">
+                  Tech stack: Python, Flask, Groq API
+                </p>
+                <div class="mt-4 flex gap-2">
+                  <a href="https://github.com/keyurbhatiya/RepoDoc.git" target="_blank"
+                     class="inline-flex flex-1 items-center justify-center rounded-full bg-blue-600 px-3 py-2 text-xs font-semibold text-white hover:bg-blue-700">
+                    GitHub
+                  </a>
+                  <a href="https://github.com/keyurbhatiya/RepoDoc.git" target="_blank"
+                     class="inline-flex flex-1 items-center justify-center rounded-full border border-slate-200 px-3 py-2 text-xs font-semibold text-slate-800 hover:border-blue-400">
+                    Live Demo
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog -->
+      <section id="blog" class="py-16 sm:py-20">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div class="mb-10 flex items-center justify-between gap-4">
+            <div>
+              <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight text-slate-900">Latest Tech Articles</h2>
+              <p class="mt-2 text-sm text-slate-500">
+                Writing about Python, AI, web dev, and experiments from my projects.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 text-sm">
+            <!-- Article 1 -->
+            <article class="rounded-2xl border border-slate-200 bg-white/90 p-5 shadow-sm">
+              <p class="text-xs text-slate-500 flex items-center gap-2">
+                <i data-lucide="calendar" class="h-4 w-4"></i>
+                <span>Oct 14, 2025 · 09:00 AM</span>
+              </p>
+              <h3 class="mt-3 text-sm font-semibold text-slate-900">
+                Mastering Flask: Build Scalable Web Apps in Python
+              </h3>
+              <p class="mt-2 text-xs text-slate-600">
+                How to build production-ready Flask apps with proper structure, APIs, templates, and deployment tips.
+              </p>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="rounded-2xl border border-slate-200 bg-white/90 p-5 shadow-sm">
+              <p class="text-xs text-slate-500 flex items-center gap-2">
+                <i data-lucide="calendar" class="h-4 w-4"></i>
+                <span>Oct 7, 2025 · 11:30 AM</span>
+              </p>
+              <h3 class="mt-3 text-sm font-semibold text-slate-900">
+                Django REST Framework: Build Powerful APIs
+              </h3>
+              <p class="mt-2 text-xs text-slate-600">
+                Deep dive into DRF, serializers, viewsets, auth, and best practices for scalable REST APIs.
+              </p>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="rounded-2xl border border-slate-200 bg-white/90 p-5 shadow-sm">
+              <p class="text-xs text-slate-500 flex items-center gap-2">
+                <i data-lucide="calendar" class="h-4 w-4"></i>
+                <span>Oct 2, 2025 · 03:00 PM</span>
+              </p>
+              <h3 class="mt-3 text-sm font-semibold text-slate-900">
+                FastAPI vs Flask: Which Python Framework Wins?
+              </h3>
+              <p class="mt-2 text-xs text-slate-600">
+                Comparing performance, DX, ecosystem, and use-cases to choose the right framework for your next API.
+              </p>
+            </article>
+
+            <!-- Article 4 -->
+            <article class="rounded-2xl border border-slate-200 bg-white/90 p-5 shadow-sm">
+              <p class="text-xs text-slate-500 flex items-center gap-2">
+                <i data-lucide="calendar" class="h-4 w-4"></i>
+                <span>Sep 25, 2025 · 01:00 PM</span>
+              </p>
+              <h3 class="mt-3 text-sm font-semibold text-slate-900">
+                Streamlit for Data Science: Build Interactive Dashboards
+              </h3>
+              <p class="mt-2 text-xs text-slate-600">
+                Using Streamlit to quickly turn ML and data notebooks into interactive, shareable apps.
+              </p>
+            </article>
+
+            <!-- Article 5 -->
+            <article class="rounded-2xl border border-slate-200 bg-white/90 p-5 shadow-sm">
+              <p class="text-xs text-slate-500 flex items-center gap-2">
+                <i data-lucide="calendar" class="h-4 w-4"></i>
+                <span>Sep 15, 2025 · 04:00 PM</span>
+              </p>
+              <h3 class="mt-3 text-sm font-semibold text-slate-900">
+                Optimizing Python Projects with Tailwind & Bootstrap
+              </h3>
+              <p class="mt-2 text-xs text-slate-600">
+                Frontend strategies for Flask/Django apps using modern utility-first and component-based CSS.
+              </p>
+            </article>
+
+            <!-- Article 6 -->
+            <article class="rounded-2xl border border-slate-200 bg-white/90 p-5 shadow-sm">
+              <p class="text-xs text-slate-500 flex items-center gap-2">
+                <i data-lucide="calendar" class="h-4 w-4"></i>
+                <span>Sep 10, 2025 · 10:00 AM</span>
+              </p>
+              <h3 class="mt-3 text-sm font-semibold text-slate-900">
+                AI-Powered Resume Critiquer using Python & NLP
+              </h3>
+              <p class="mt-2 text-xs text-slate-600">
+                Behind the scenes of building the AI Resume Critiquer using NLP, scoring, and actionable suggestions.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="py-16 sm:py-20 bg-slate-900 text-slate-100">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div class="mb-10 flex items-center justify-between gap-4">
+            <div>
+              <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight text-white">Let’s Connect</h2>
+              <p class="mt-2 text-sm text-slate-400 max-w-xl">
+                If you’re into AI, web development, or want to build something meaningful, I’d love to connect and collaborate.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid gap-10 lg:grid-cols-[minmax(0,1.1fr),minmax(0,1.3fr)]">
+            <!-- Info -->
+            <div class="space-y-6">
+              <div class="space-y-6 text-sm">
+                <div class="flex items-center gap-3">
+                  <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-800">
+                    <i data-lucide="mail" class="h-4 w-4 text-blue-400"></i>
+                  </div>
+                  <div>
+                    <p class="text-xs font-medium text-slate-400">Email</p>
+                    <a href="mailto:keyurbhatiya.dev@gmail.com" class="text-sm text-slate-100 hover:text-blue-400">
+                      keyurbhatiya.dev@gmail.com
+                    </a>
+                  </div>
+                </div>
+
+                <div class="flex items-center gap-3">
+                  <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-800">
+                    <i data-lucide="map-pin" class="h-4 w-4 text-blue-400"></i>
+                  </div>
+                  <div>
+                    <p class="text-xs font-medium text-slate-400">Location</p>
+                    <p class="text-sm text-slate-100">Gujarat, India · Open to Remote</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-6">
+                <p class="text-xs font-medium uppercase tracking-wide text-slate-400">
+                  Social
+                </p>
+                <div class="mt-3 flex flex-wrap gap-3 text-xs">
+                  <a href="https://github.com/keyurbhatiya" target="_blank"
+                     class="inline-flex items-center gap-2 rounded-full bg-slate-800 px-4 py-2 font-medium text-slate-100 hover:bg-slate-700">
+                    <i data-lucide="github" class="h-4 w-4"></i>
+                    GitHub
+                  </a>
+                  <a href="https://linkedin.com/in/keyurbhatiya" target="_blank"
+                     class="inline-flex items-center gap-2 rounded-full bg-slate-800 px-4 py-2 font-medium text-slate-100 hover:bg-slate-700">
+                    <i data-lucide="linkedin" class="h-4 w-4"></i>
+                    LinkedIn
+                  </a>
+                  <a href="https://x.com/keyur_bhatiya" target="_blank"
+                        class="inline-flex items-center gap-2 rounded-full bg-slate-800 px-4 py-2 font-medium text-slate-100 hover:bg-slate-700">
+                        <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
+                        </svg>
+                        X (Twitter)
+                    </a>
+                  <a href="https://instagram.com/keyur_bhatiya" target="_blank"
+                     class="inline-flex items-center gap-2 rounded-full bg-slate-800 px-4 py-2 font-medium text-slate-100 hover:bg-slate-700">
+                    <i data-lucide="instagram" class="h-4 w-4"></i>
+                    Instagram
+                  </a>
+                </div>
+              </div>
+
+              <p class="mt-6 text-xs text-slate-400 max-w-md">
+                Technology isn’t just about code — it’s about building smart, impactful, and secure experiences
+                that improve how we live, learn, and connect.
+              </p>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="rounded-2xl border border-slate-700 bg-slate-900/60 p-6 sm:p-7 shadow-xl shadow-slate-950/40">
+            <form action="https://formspree.io/f/mzbnezgd" method="POST" class="space-y-5 text-sm">
+
+            <div class="grid gap-4 sm:grid-cols-2">
+
                 <div>
-                    <h2 class="text-3xl font-bold text-primary mb-6">About Me</h2>
-                    <p class="text-lg text-slate-600 mb-6 leading-relaxed">
-                        Hi! I'm <strong>Keyur Bhatiya</strong>. I specialize in <strong>backend development, AI integration, and data visualization</strong>. My passion lies in turning complex ideas into clean, high-performing digital solutions.
-                    </p>
-                    <p class="text-lg text-slate-600 mb-8 leading-relaxed">
-                        I’ve developed projects ranging from <strong>AI-powered assistants</strong> and <strong>Flask/Django web apps</strong> to <strong>Streamlit dashboards</strong>. My focus is always on writing optimized, maintainable, and secure code that scales with modern business needs.
-                    </p>
-                    
-                    <div class="grid grid-cols-2 gap-6">
-                        <div class="p-4 bg-slate-50 rounded-xl border border-slate-100">
-                            <h4 class="font-bold text-primary text-xl">10+</h4>
-                            <p class="text-sm text-slate-500">Projects Completed</p>
-                        </div>
-                        <div class="p-4 bg-slate-50 rounded-xl border border-slate-100">
-                            <h4 class="font-bold text-primary text-xl">69 Days</h4>
-                            <p class="text-sm text-slate-500">Python Challenge</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="py-20 bg-slate-50 border-y border-slate-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-primary mb-12 text-center">Tech Stack</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
-                    <h3 class="font-semibold text-primary mb-4 flex items-center gap-2"><i data-lucide="server" class="w-5 h-5 text-accent"></i> Backend</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-sm">Python</span>
-                        <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-sm">Django</span>
-                        <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-sm">Flask</span>
-                        <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-sm">FastAPI</span>
-                    </div>
+                <label for="name" class="block text-xs font-medium text-slate-300">
+                    Name
+                </label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    autocomplete="off"
+                    class="mt-2 block w-full rounded-xl border border-slate-700 bg-slate-900 px-3 py-2.5 text-sm text-slate-100 placeholder-slate-500 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    placeholder="Your name"
+                />
                 </div>
 
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
-                    <h3 class="font-semibold text-primary mb-4 flex items-center gap-2"><i data-lucide="monitor" class="w-5 h-5 text-accent"></i> Frontend</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-sm">HTML/CSS</span>
-                        <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-sm">Tailwind CSS</span>
-                        <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-sm">Bootstrap</span>
-                        <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-sm">AJAX</span>
-                    </div>
-                </div>
-
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
-                    <h3 class="font-semibold text-primary mb-4 flex items-center gap-2"><i data-lucide="database" class="w-5 h-5 text-accent"></i> Database</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-sm">PostgreSQL</span>
-                        <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-sm">MySQL</span>
-                        <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-sm">SQLite</span>
-                    </div>
-                </div>
-
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
-                    <h3 class="font-semibold text-primary mb-4 flex items-center gap-2"><i data-lucide="bot" class="w-5 h-5 text-accent"></i> Tools & AI</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-sm">Git & GitHub</span>
-                        <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-sm">Streamlit</span>
-                        <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-sm">OpenAI API</span>
-                        <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-sm">Groq API</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="services" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl font-bold text-primary mb-4">What I Do</h2>
-            <p class="text-slate-600 mb-12 max-w-2xl mx-auto">Combining technical expertise with creative problem solving.</p>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="p-6 rounded-2xl bg-slate-50 hover:bg-white hover:shadow-xl transition duration-300 border border-slate-100 group">
-                    <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center mx-auto mb-4 shadow-sm group-hover:bg-accent group-hover:text-white transition">
-                        <i data-lucide="layout" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="font-bold text-lg mb-2">Web Apps</h3>
-                    <p class="text-sm text-slate-500">Full-stack development using Django & Flask.</p>
-                </div>
-                <div class="p-6 rounded-2xl bg-slate-50 hover:bg-white hover:shadow-xl transition duration-300 border border-slate-100 group">
-                    <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center mx-auto mb-4 shadow-sm group-hover:bg-accent group-hover:text-white transition">
-                        <i data-lucide="brain-circuit" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="font-bold text-lg mb-2">AI Integration</h3>
-                    <p class="text-sm text-slate-500">Connecting LLMs and NLP to real-world apps.</p>
-                </div>
-                <div class="p-6 rounded-2xl bg-slate-50 hover:bg-white hover:shadow-xl transition duration-300 border border-slate-100 group">
-                    <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center mx-auto mb-4 shadow-sm group-hover:bg-accent group-hover:text-white transition">
-                        <i data-lucide="bar-chart-3" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="font-bold text-lg mb-2">Data Viz</h3>
-                    <p class="text-sm text-slate-500">Interactive dashboards with Streamlit.</p>
-                </div>
-                <div class="p-6 rounded-2xl bg-slate-50 hover:bg-white hover:shadow-xl transition duration-300 border border-slate-100 group">
-                    <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center mx-auto mb-4 shadow-sm group-hover:bg-accent group-hover:text-white transition">
-                        <i data-lucide="rocket" class="w-6 h-6"></i>
-                    </div>
-                    <h3 class="font-bold text-lg mb-2">Automation</h3>
-                    <p class="text-sm text-slate-500">Python scripts to automate workflows.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="py-20 bg-slate-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
                 <div>
-                    <h2 class="text-3xl font-bold text-primary">Featured Projects</h2>
-                    <p class="mt-2 text-slate-600">A selection of my recent work in Web & AI.</p>
+                <label for="email" class="block text-xs font-medium text-slate-300">
+                    Email
+                </label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    autocomplete="off"
+                    class="mt-2 block w-full rounded-xl border border-slate-700 bg-slate-900 px-3 py-2.5 text-sm text-slate-100 placeholder-slate-500 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    placeholder="you@example.com"
+                />
                 </div>
-                <a href="https://github.com/keyurbhatiya" target="_blank" class="hidden md:flex items-center text-accent font-semibold hover:text-blue-800 transition">
-                    View GitHub <i data-lucide="arrow-up-right" class="w-4 h-4 ml-1"></i>
-                </a>
+
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-xl hover:-translate-y-2 transition duration-300 flex flex-col">
-                    <div class="p-6 flex-1 flex flex-col">
-                        <div class="mb-4">
-                            <div class="flex justify-between items-center mb-2">
-                                <span class="text-xs font-bold text-accent uppercase tracking-wider">Django & Tailwind</span>
-                                <span class="text-xs text-slate-400">Oct 2025</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-primary">AcademicHub</h3>
-                            <p class="text-slate-600 text-sm mt-3 leading-relaxed">
-                                Full-stack academic resource management app with an admin dashboard, interactive analytics, content moderation, and responsive UI.
-                            </p>
-                            <p class="text-xs text-slate-500 mt-2 italic">Stack: Django, PostgreSQL, Cloudinary</p>
-                        </div>
-                        <div class="mt-auto pt-6 flex gap-4">
-                            <a href="https://academichub-frio.onrender.com" target="_blank" class="flex-1 py-2 text-center rounded-lg bg-primary text-white text-sm font-medium hover:bg-slate-800 transition">Live Demo</a>
-                            <a href="https://github.com/keyurbhatiya/academichub" target="_blank" class="flex-1 py-2 text-center rounded-lg border border-slate-200 text-slate-700 text-sm font-medium hover:bg-slate-50 transition">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-xl hover:-translate-y-2 transition duration-300 flex flex-col">
-                    <div class="p-6 flex-1 flex flex-col">
-                        <div class="mb-4">
-                            <div class="flex justify-between items-center mb-2">
-                                <span class="text-xs font-bold text-accent uppercase tracking-wider">Flask & FastAPI</span>
-                                <span class="text-xs text-slate-400">Sep 2025</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-primary">QuickShare</h3>
-                            <p class="text-slate-600 text-sm mt-3 leading-relaxed">
-                                Secure, ephemeral file and link sharing service. Generates short codes for content that auto-deletes after 5 minutes for privacy.
-                            </p>
-                            <p class="text-xs text-slate-500 mt-2 italic">Stack: Flask, FastAPI, Tailwind</p>
-                        </div>
-                        <div class="mt-auto pt-6 flex gap-4">
-                            <a href="https://quickshare-it.onrender.com" target="_blank" class="flex-1 py-2 text-center rounded-lg bg-primary text-white text-sm font-medium hover:bg-slate-800 transition">Live Demo</a>
-                            <a href="https://github.com/keyurbhatiya/QuickShare.git" target="_blank" class="flex-1 py-2 text-center rounded-lg border border-slate-200 text-slate-700 text-sm font-medium hover:bg-slate-50 transition">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                 <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-xl hover:-translate-y-2 transition duration-300 flex flex-col">
-                    <div class="p-6 flex-1 flex flex-col">
-                        <div class="mb-4">
-                            <div class="flex justify-between items-center mb-2">
-                                <span class="text-xs font-bold text-accent uppercase tracking-wider">AI Assistant</span>
-                                <span class="text-xs text-slate-400">Jun 2025</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-primary">Jarvis AI Assistant</h3>
-                            <p class="text-slate-600 text-sm mt-3 leading-relaxed">
-                                AI-powered desktop assistant with biometric login, voice commands, and offline + online AI modes.
-                            </p>
-                            <p class="text-xs text-slate-500 mt-2 italic">Stack: Python, Groq API, Edge-TTS</p>
-                        </div>
-                        <div class="mt-auto pt-6 flex gap-4">
-                            <a href="https://github.com/keyurbhatiya/Jarvis_ai_2025.git" target="_blank" class="flex-1 py-2 text-center rounded-lg bg-primary text-white text-sm font-medium hover:bg-slate-800 transition">View Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-xl hover:-translate-y-2 transition duration-300 flex flex-col">
-                    <div class="p-6 flex-1 flex flex-col">
-                        <div class="mb-4">
-                            <div class="flex justify-between items-center mb-2">
-                                <span class="text-xs font-bold text-accent uppercase tracking-wider">Streamlit & AI</span>
-                                <span class="text-xs text-slate-400">May 2025</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-primary">AI Resume Critiquer</h3>
-                            <p class="text-slate-600 text-sm mt-3 leading-relaxed">
-                                A smart resume analyzer that provides feedback and improvement tips using AI and NLP models.
-                            </p>
-                            <p class="text-xs text-slate-500 mt-2 italic">Stack: Streamlit, OpenAI API</p>
-                        </div>
-                        <div class="mt-auto pt-6 flex gap-4">
-                            <a href="https://github.com/keyurbhatiya/AI-Resume-Critiquer.git" target="_blank" class="flex-1 py-2 text-center rounded-lg bg-primary text-white text-sm font-medium hover:bg-slate-800 transition">Live Demo</a>
-                            <a href="https://github.com/keyurbhatiya/AI-Resume-Critiquer.git" target="_blank" class="flex-1 py-2 text-center rounded-lg border border-slate-200 text-slate-700 text-sm font-medium hover:bg-slate-50 transition">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-xl hover:-translate-y-2 transition duration-300 flex flex-col">
-                    <div class="p-6 flex-1 flex flex-col">
-                        <div class="mb-4">
-                            <div class="flex justify-between items-center mb-2">
-                                <span class="text-xs font-bold text-accent uppercase tracking-wider">Chatbot</span>
-                                <span class="text-xs text-slate-400">Aug 2025</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-primary">Sassy Chatbot Web App</h3>
-                            <p class="text-slate-600 text-sm mt-3 leading-relaxed">
-                                An interactive chatbot web app with distinct personality settings, built with Streamlit and AI models.
-                            </p>
-                        </div>
-                        <div class="mt-auto pt-6 flex gap-4">
-                            <a href="https://github.com/keyurbhatiya/Sassy-Chatbot.git" target="_blank" class="flex-1 py-2 text-center rounded-lg bg-primary text-white text-sm font-medium hover:bg-slate-800 transition">Live Demo</a>
-                            <a href="https://github.com/keyurbhatiya/Sassy-Chatbot.git" target="_blank" class="flex-1 py-2 text-center rounded-lg border border-slate-200 text-slate-700 text-sm font-medium hover:bg-slate-50 transition">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-xl hover:-translate-y-2 transition duration-300 flex flex-col">
-                    <div class="p-6 flex-1 flex flex-col">
-                        <div class="mb-4">
-                            <div class="flex justify-between items-center mb-2">
-                                <span class="text-xs font-bold text-accent uppercase tracking-wider">Developer Tool</span>
-                                <span class="text-xs text-slate-400">Aug 2025</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-primary">RepoDoc</h3>
-                            <p class="text-slate-600 text-sm mt-3 leading-relaxed">
-                                A Flask-based tool to generate professional README files for public GitHub repositories by analyzing their structure.
-                            </p>
-                        </div>
-                        <div class="mt-auto pt-6 flex gap-4">
-                            <a href="https://github.com/keyurbhatiya/RepoDoc.git" target="_blank" class="flex-1 py-2 text-center rounded-lg bg-primary text-white text-sm font-medium hover:bg-slate-800 transition">Live Demo</a>
-                            <a href="https://github.com/keyurbhatiya/RepoDoc.git" target="_blank" class="flex-1 py-2 text-center rounded-lg border border-slate-200 text-slate-700 text-sm font-medium hover:bg-slate-50 transition">GitHub</a>
-                        </div>
-                    </div>
-                </div>
+            <div>
+                <label for="subject" class="block text-xs font-medium text-slate-300">
+                Subject
+                </label>
+                <input
+                type="text"
+                id="subject"
+                name="subject"
+                required
+                autocomplete="off"
+                class="mt-2 block w-full rounded-xl border border-slate-700 bg-slate-900 px-3 py-2.5 text-sm text-slate-100 placeholder-slate-500 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="Project, collaboration, or question"
+                />
             </div>
-            
-            <div class="mt-8 text-center md:hidden">
-                <a href="https://github.com/keyurbhatiya" target="_blank" class="inline-flex items-center text-accent font-semibold hover:text-blue-800 transition">
-                    View GitHub Profile <i data-lucide="arrow-up-right" class="w-4 h-4 ml-1"></i>
-                </a>
+
+            <div>
+                <label for="message" class="block text-xs font-medium text-slate-300">
+                Message
+                </label>
+                <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+                autocomplete="off"
+                class="mt-2 block w-full rounded-xl border border-slate-700 bg-slate-900 px-3 py-2.5 text-sm text-slate-100 placeholder-slate-500 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+                placeholder="Tell me a bit about what you have in mind..."
+                ></textarea>
             </div>
+
+            <div class="flex items-center justify-between gap-3">
+                <p class="text-[0.7rem] text-slate-500">
+                I usually respond within 24–48 hours.
+                </p>
+                <button
+                type="submit"
+                class="inline-flex items-center justify-center rounded-full bg-blue-600 px-5 py-2.5 text-xs font-semibold text-white shadow-soft hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-slate-900"
+                >
+                Send Message
+                <i data-lucide="send" class="ml-2 h-4 w-4"></i>
+                </button>
+            </div>
+
+            </form>
+
+
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
+    </main>
 
-    <section id="experience" class="py-20 bg-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold text-primary mb-8">Experience & Education</h2>
-            
-            <div class="relative border-l-2 border-slate-200 ml-3 space-y-12">
-                
-                <div class="relative pl-8">
-                    <span class="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-accent border-4 border-white shadow"></span>
-                    <h3 class="text-xl font-bold text-primary">Freelance Python Developer</h3>
-                    <span class="text-sm text-slate-500 font-medium">2024 - Present</span>
-                    <p class="mt-2 text-slate-600">
-                        Building full-stack web applications and automation tools. Focused on clean architecture and scalable practices.
-                    </p>
-                </div>
-
-                <div class="relative pl-8">
-                    <span class="absolute -left-[9px] top-1 h-4 w-4 rounded-full bg-slate-300 border-4 border-white shadow"></span>
-                    <h3 class="text-xl font-bold text-primary">BCA (Bachelor of Computer Applications)</h3>
-                    <span class="text-sm text-slate-500 font-medium">Graduated</span>
-                    <p class="mt-2 text-slate-600">
-                        Foundation in Computer Science, Database Management, and Software Engineering.
-                    </p>
-                </div>
-            </div>
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 bg-white/80">
+      <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-4 py-4 text-[0.7rem] text-slate-500 sm:flex-row sm:px-6 lg:px-8">
+        <div class="flex flex-wrap items-center gap-2">
+          <span>© <span id="year"></span> <a href="https://linkedin.com/in/keyurbhatiya" target="_blank" class="hover:text-blue-600">Keyur Bhatiya</a>.</span>
+          <span class="hidden sm:inline">|</span>
+          <span>All rights reserved.</span>
         </div>
-    </section>
-
-    <section id="contact" class="py-20 bg-slate-900 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
-                <div>
-                    <h2 class="text-3xl font-bold mb-6">Let's work together.</h2>
-                    <p class="text-slate-400 mb-8 text-lg">
-                        I'm currently available for freelance projects. If you need a scalable web solution or an automation script, let's connect.
-                    </p>
-                    
-                    <div class="space-y-4">
-                        <a href="mailto:keyurbhatiya.dev@gmail.com" class="flex items-center gap-4 p-4 rounded-xl bg-slate-800 hover:bg-slate-700 transition">
-                            <i data-lucide="mail" class="w-6 h-6 text-accent"></i>
-                            <span class="font-medium">keyurbhatiya.dev@gmail.com</span>
-                        </a>
-                        
-                        <div class="flex gap-4 mt-8">
-                            <a href="https://linkedin.com/in/keyurbhatiya" target="_blank" class="p-3 bg-slate-800 rounded-full hover:bg-accent transition"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
-                            <a href="https://github.com/keyurbhatiya" target="_blank" class="p-3 bg-slate-800 rounded-full hover:bg-accent transition"><i data-lucide="github" class="w-5 h-5"></i></a>
-                            <a href="https://x.com/keyur_bhatiya" target="_blank" class="p-3 bg-slate-800 rounded-full hover:bg-accent transition"><i data-lucide="twitter" class="w-5 h-5"></i></a>
-                            <a href="https://instagram.com/keyur_bhatiya" target="_blank" class="p-3 bg-slate-800 rounded-full hover:bg-accent transition"><i data-lucide="instagram" class="w-5 h-5"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <form class="bg-white p-8 rounded-2xl shadow-2xl text-slate-800">
-                    <div class="mb-4">
-                        <label class="block text-sm font-semibold mb-2">Name</label>
-                        <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:outline-none focus:border-accent transition">
-                    </div>
-                    <div class="mb-4">
-                        <label class="block text-sm font-semibold mb-2">Email</label>
-                        <input type="email" placeholder="your@email.com" class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:outline-none focus:border-accent transition">
-                    </div>
-                    <div class="mb-6">
-                        <label class="block text-sm font-semibold mb-2">Message</label>
-                        <textarea rows="4" placeholder="Tell me about your project..." class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:outline-none focus:border-accent transition"></textarea>
-                    </div>
-                    <button type="submit" class="w-full py-3.5 rounded-lg bg-accent text-white font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-200/50">Send Message</button>
-                </form>
-            </div>
-            
-            <div class="border-t border-slate-800 mt-20 pt-8 text-center text-slate-500 text-sm">
-                &copy; <script>document.write(new Date().getFullYear())</script> Keyur Bhatiya. All rights reserved.
-            </div>
+        <div class="flex items-center gap-3">
+          <span class="hidden sm:inline">Built with Python, Tailwind, and AI.</span>
         </div>
-    </section>
+      </div>
+    </footer>
+  </div>
 
-    <script>
-        // Initialize Icons
-        lucide.createIcons();
+  <!-- Minimal JS -->
+  <script>
+    // Mobile menu toggle
+    const menuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
 
-        // Mobile Menu Logic
-        const btn = document.getElementById('mobile-menu-btn');
-        const menu = document.getElementById('mobile-menu');
+    if (menuButton && mobileMenu) {
+      menuButton.addEventListener('click', () => {
+        const isOpen = !mobileMenu.classList.contains('hidden');
+        mobileMenu.classList.toggle('hidden');
+        menuButton.setAttribute('aria-expanded', String(!isOpen));
+      });
+    }
 
-        if(btn && menu) {
-            btn.addEventListener('click', () => {
-                menu.classList.toggle('hidden');
-            });
+    // Dynamic year
+    const yearSpan = document.getElementById('year');
+    if (yearSpan) {
+      yearSpan.textContent = new Date().getFullYear();
+    }
 
-            // Close mobile menu on link click
-            menu.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
-                    menu.classList.add('hidden');
-                });
-            });
-        }
-    </script>
+    // Initialize Lucide Icons
+    if (window.lucide && typeof window.lucide.createIcons === 'function') {
+      window.lucide.createIcons();
+    }
+  </script>
+  <script>
+  lucide.createIcons()
+  </script>
 </body>
 </html>
+
